@@ -12,8 +12,8 @@ use Pod::Usage;
 
 use FindBin;
 use lib "$FindBin::Bin/lib";
-use OSM::NumRoutes; # to hook into osm.newtempseg schema
-use NewCTMLMap::ExtractOut; # for spatialvds.newctmlmap schema
+use OSM::NumRoutes;            # to hook into osm.newtempseg schema
+use NewCTMLMap::ExtractOut;    # for spatialvds.newctmlmap schema
 
 use IO::File;
 use Text::CSV;
@@ -25,12 +25,12 @@ use DateTime::Format::Pg;
 
 #### This is the part where options are set
 
-my $user   = $ENV{PSQL_USER} || q{};
-my $pass   = $ENV{PSQL_PASS} || q{};
-my $host   = $ENV{PSQL_HOST} || q{};
+my $user        = $ENV{PSQL_USER} || q{};
+my $pass        = $ENV{PSQL_PASS} || q{};
+my $host        = $ENV{PSQL_HOST} || q{};
 my $eventdbname = $ENV{PSQL_DB}   || 'spatialvds';
-my $mapdbname = $ENV{PSQL_DB}   || 'osm';
-my $port   = $ENV{PSQL_PORT} || 5432;
+my $mapdbname   = $ENV{PSQL_DB}   || 'osm';
+my $port        = $ENV{PSQL_PORT} || 5432;
 my $path;
 my $help;
 my $cdb_user   = $ENV{COUCHDB_USER} || q{};
@@ -67,11 +67,9 @@ if ( !$result || $help ) {
     pod2usage(1);
 }
 
-
 # logic: query the db for all timestamps in the events table (start
 # timestamps) that do not yet have an associated entry in ... hmm, the
 # couchdb tracking table? or perhaps join the query with the events_segements table and pick ones without entries?  And then iterate over the timestamps.  For each timestamp, send a request to the stored procedure generates a list of detectors that are active for that timestamp (where ts <= $qtime and endts > $qtime).  With that list in hand, send those points to a function that calls a sql routine that loads up the versioned_detector_segment table.
-
 
 # access the event db table
 my $ctmlmap = 'NewCTMLMap::ExtractOut'->new(
@@ -117,15 +115,10 @@ $tempseg->create_db();
 
 # get the timestamps I care about
 my $event_rs = $ctmlmap->seg_detector_event_rs();
-while (my $segment_event = $event_rs->next){
-  my $ts = $segment_event->ts;
-
-  my $friends = $schema->resultset( 'UserFriendsComplex' )->search( {},
-                                                                    {
-                                                                     bind  => [ $ts,$ts ]
-                                                                    }
-  );
-  croak "did I insert friends for $ts?  Check the db";
+while ( my $segment_event = $event_rs->next ) {
+    my $ts      = $segment_event->ts;
+    my $friends = $tempseg->automated_versioned_segment_insert($ts);
+    carp "$friends rows inserted for time $ts";
 }
 
 1;
