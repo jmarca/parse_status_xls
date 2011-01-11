@@ -114,11 +114,25 @@ my $tempseg = 'OSM::NumRoutes'->new(
 $tempseg->create_db();
 
 # get the timestamps I care about
-my $event_rs = $ctmlmap->seg_detector_event_rs();
-while ( my $segment_event = $event_rs->next ) {
+my $event_rs      = $ctmlmap->seg_detector_event_rs();
+my $segment_event = $event_rs->next;
+while ($segment_event) {
     my $ts      = $segment_event->ts;
     my $friends = $tempseg->automated_versioned_segment_insert($ts);
     carp "$friends rows inserted for time $ts";
+    $segment_event = $event_rs->next;
+    my $nextts;
+    if ($segment_event) {
+        $nextts = $segment_event->ts;
+    }
+    my $components = $tempseg->automated_versioned_segment_components_insert(
+        '2008-01-01 00:00:03',
+        '2008-01-01 00:00:16' );
+
+    carp
+"$components rows inserted into component set for time $ts to time $nextts";
+    ## croak 'die ugly';
+
 }
 
 1;
