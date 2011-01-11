@@ -79,11 +79,9 @@ my $ctmlmap = 'NewCTMLMap::ExtractOut'->new(
     # first the sql role
     'host_psql'     => $host,
     'port_psql'     => $port,
-    'dbname_psql'   => $dbname,
+    'dbname_psql'   => $eventdbname,
     'username_psql' => $user,
     'password_psql' => $pass,
-
-    'sth_caching'            => $caching,
 
     # now the couchdb role
     'host_couchdb'     => $cdb_host,
@@ -99,11 +97,9 @@ my $tempseg = 'OSM::NumRoutes'->new(
     # first the sql role
     'host_psql'     => $host,
     'port_psql'     => $port,
-    'dbname_psql'   => $dbname,
+    'dbname_psql'   => $mapdbname,
     'username_psql' => $user,
     'password_psql' => $pass,
-
-    'sth_caching'            => $caching,
 
     # now the couchdb role
     'host_couchdb'     => $cdb_host,
