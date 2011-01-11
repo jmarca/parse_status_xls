@@ -125,9 +125,7 @@ while ($segment_event) {
     if ($segment_event) {
         $nextts = $segment_event->ts;
     }
-    my $components = $tempseg->automated_versioned_segment_components_insert(
-        '2008-01-01 00:00:03',
-        '2008-01-01 00:00:16' );
+    my $components = $tempseg->automated_versioned_segment_components_insert($ts,$nextts);
 
     carp
 "$components rows inserted into component set for time $ts to time $nextts";
