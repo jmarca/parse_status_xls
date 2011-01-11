@@ -118,7 +118,14 @@ $tempseg->create_db();
 # get the timestamps I care about
 my $event_rs = $ctmlmap->seg_detector_event_rs();
 while (my $segment_event = $event_rs->next){
-  carp $segment_event->ts;
+  my $ts = $segment_event->ts;
+
+  my $friends = $schema->resultset( 'UserFriendsComplex' )->search( {},
+                                                                    {
+                                                                     bind  => [ $ts,$ts ]
+                                                                    }
+  );
+  croak "did I insert friends for $ts?  Check the db";
 }
 
 1;
