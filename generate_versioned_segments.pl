@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 use Data::Dumper;
-use version; our $VERSION = qv('0.0.3');
+use version; our $VERSION = qv('0.0.4');
 use English qw(-no_match_vars);
 use Carp;
 
@@ -31,7 +31,6 @@ my $host        = $ENV{PSQL_HOST} || q{};
 my $eventdbname = $ENV{PSQL_DB}   || 'spatialvds';
 my $mapdbname   = $ENV{PSQL_DB}   || 'osm';
 my $port        = $ENV{PSQL_PORT} || 5432;
-my $path;
 my $help;
 my $cdb_user   = $ENV{COUCHDB_USER} || q{};
 my $cdb_pass   = $ENV{COUCHDB_PASS} || q{};
@@ -39,28 +38,28 @@ my $cdb_host   = $ENV{COUCHDB_HOST} || '127.0.0.1';
 my $cdb_dbname = $ENV{COUCHDB_DB}   || 'versioned_detector_segments';
 my $cdb_port   = $ENV{COUCHDB_PORT} || '5984';
 
-my $deletedb;
-my $dumpsize = 1000;
-
-my $reparse;
+my $startyear;
+my $endyear;
+my $event;
+my $detector_pattern;
 
 my $result = GetOptions(
-    'username:s'  => \$user,
-    'password:s'  => \$pass,
-    'host:s'      => \$host,
-    'db:s'        => \$eventdbname,
-    'osmdb:s'     => \$mapdbname,
-    'port:i'      => \$port,
-    'cusername:s' => \$cdb_user,
-    'cpassword:s' => \$cdb_pass,
-    'chost:s'     => \$cdb_host,
-    'cdb:s'       => \$cdb_dbname,
-    'cport:i'     => \$cdb_port,
-    'path=s'      => \$path,
-    'delete'      => \$deletedb,
-    'reparse'     => \$reparse,
-    'bulksize=i'  => \$dumpsize,
-    'help|?'      => \$help
+    'startyear:i'        => \$startyear,
+    'endyear:i'          => \$endyear,
+    'event:s'            => \$event,
+    'detector_pattern:s' => \$detector_pattern,
+    'username:s'         => \$user,
+    'password:s'         => \$pass,
+    'host:s'             => \$host,
+    'db:s'               => \$eventdbname,
+    'osmdb:s'            => \$mapdbname,
+    'port:i'             => \$port,
+    'cusername:s'        => \$cdb_user,
+    'cpassword:s'        => \$cdb_pass,
+    'chost:s'            => \$cdb_host,
+    'cdb:s'              => \$cdb_dbname,
+    'cport:i'            => \$cdb_port,
+    'help|?'             => \$help
 );
 
 if ( !$result || $help ) {
@@ -69,7 +68,13 @@ if ( !$result || $help ) {
 
 # logic: query the db for all timestamps in the events table (start
 # timestamps) that do not yet have an associated entry in ... hmm, the
-# couchdb tracking table? or perhaps join the query with the events_segements table and pick ones without entries?  And then iterate over the timestamps.  For each timestamp, send a request to the stored procedure generates a list of detectors that are active for that timestamp (where ts <= $qtime and endts > $qtime).  With that list in hand, send those points to a function that calls a sql routine that loads up the versioned_detector_segment table.
+# couchdb tracking table? or perhaps join the query with the
+# events_segements table and pick ones without entries?  And then
+# iterate over the timestamps.  For each timestamp, send a request to
+# the stored procedure generates a list of detectors that are active
+# for that timestamp (where ts <= $qtime and endts > $qtime).  With
+# that list in hand, send those points to a function that calls a sql
+# routine that loads up the versioned_detector_segment table.
 
 # access the event db table
 my $ctmlmap = 'NewCTMLMap::ExtractOut'->new(
@@ -90,6 +95,15 @@ my $ctmlmap = 'NewCTMLMap::ExtractOut'->new(
     'create'           => 1,
 
 );
+if ($startyear) {
+    $ctmlmap->mintime( join q{}, $startyear, '-01-01 00:00:00' );
+}
+if ($endyear) {
+    $ctmlmap->maxtime( join q{}, $endyear + 1, '-01-01 00:00:00' );
+}
+if ($event)            { $ctmlmap->event($event); }
+if ($detector_pattern) { $ctmlmap->detector_pattern($detector_pattern); }
+
 my $tempseg = 'OSM::NumRoutes'->new(
 
     # first the sql role
@@ -125,7 +139,8 @@ while ($segment_event) {
     if ($segment_event) {
         $nextts = $segment_event->ts;
     }
-    my $components = $tempseg->automated_versioned_segment_components_insert($ts,$nextts);
+    my $components =
+      $tempseg->automated_versioned_segment_components_insert( $ts, $nextts );
 
     carp
 "$components rows inserted into component set for time $ts to time $nextts";
@@ -140,35 +155,45 @@ __END__
 
 =head1 NAME
 
-    parse_wim_csv_bulkload - write the wim data to postgresql via bulk loading
+    generate_versioned_segments.pl - for each event time, generate complete set of events and segment to detector mappings
 
 =head1 VERSION
 
-    this is the 3rd version
+    this is the 4th version
 
 =head1 USAGE
 
-    parse_wim_csv_bulkload.pl --path /data/wim/raw/data/ --site 6 -y 2007 -m 12
+    perl -w generate_versioned_segments.pl
+
 
 =head1 REQUIRED ARGUMENTS
 
-       -path     the directory in which the target raw PeMS data files reside
+    none.  use environment variables
 
 
 =head1 OPTIONS
 
-       -help     brief help message
+    -startyear        optional, the start year for the analysis, will get dates greater than year-01-01 00:00:00
+    -endyear          optional, the end year for the analysis, will get dates less than (year+1)-01-01 00:00:00
+    -event            optional, the event of interest, default specified in OSM::NumRoutes, example 'imputed|observed'
+    -detector_pattern optional, the detector pattern,  default specified in OSM::NumRoutes, example 'vds|wim'
+
        -username optional, username for the pg database
        -password optional, password for the pg database
        -host     optional, host to use for postgres
-       -db       optional, database to use for postgres, defaults to spatialvds
+       -db       optional, database to use for the db containing the newctmlmap schema and tables, defaults to spatialvds
+       -osmdb    optional, database to use for the db containing the osm tempseg schema and tables, defaults to osm
        -port     optional, defaults to pg standard
 
        -cusername  optional,  couchdb user
        -cpassword  optional,  couchdb pass
        -chost      optional,  couchdb host, default localhost
-       -cdb        optional,  couchdb dbname, default pemsrawdocs
+       -cdb        optional,  couchdb dbname, default versioned_detector_segments, for tracking stuff.  Kindof unused right now
        -cport      optional,  couchdb port, default couchdb-standard 5984
+
+
+    'help|?'             => \$help
+       -help     brief help message
 
        and other options I am too lazy to document
 
