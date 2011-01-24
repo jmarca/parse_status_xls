@@ -39,12 +39,16 @@ my $cdb_dbname = $ENV{COUCHDB_DB}   || 'versioned_detector_segments';
 my $cdb_port   = $ENV{COUCHDB_PORT} || '5984';
 
 my $startyear;
+my $startmonth = 1;
+my $startday   = 1;
 my $endyear;
 my $event;
 my $detector_pattern;
 
 my $result = GetOptions(
     'startyear:i'        => \$startyear,
+    'startmonth:i'       => \$startmonth,
+    'startday:i'         => \$startday,
     'endyear:i'          => \$endyear,
     'event:s'            => \$event,
     'detector_pattern:s' => \$detector_pattern,
@@ -96,7 +100,12 @@ my $ctmlmap = 'NewCTMLMap::ExtractOut'->new(
 
 );
 if ($startyear) {
-    $ctmlmap->mintime( join q{}, $startyear, '-01-01 00:00:00' );
+
+    $startmonth = $startmonth < 10 ? join q{}, 0, $startmonth : $startmonth;
+    $startday   = $startday < 10   ? join q{}, 0, $startday   : $startday;
+
+    $ctmlmap->mintime( join q{}, $startyear, q{-}, $startmonth, q{-}, $startday,
+        ' 00:00:00' );
 }
 if ($endyear) {
     $ctmlmap->maxtime( join q{}, $endyear + 1, '-01-01 00:00:00' );
@@ -174,6 +183,8 @@ __END__
 =head1 OPTIONS
 
     -startyear        optional, the start year for the analysis, will get dates greater than year-01-01 00:00:00
+    -startmonth        optional, the start month.  useful if a program is killed
+    -startday          optional, the start day.  useful if a program is killed
     -endyear          optional, the end year for the analysis, will get dates less than (year+1)-01-01 00:00:00
     -event            optional, the event of interest, default specified in OSM::NumRoutes, example 'imputed|observed'
     -detector_pattern optional, the detector pattern,  default specified in OSM::NumRoutes, example 'vds|wim'
