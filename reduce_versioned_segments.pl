@@ -119,9 +119,9 @@ my $push_reduced_segment_conditions = sub {
 $tempseg->create_db();
 
 # get a hook into the components I need to simplify
-my $rs        = $tempseg->distinct_components_rs();
-my $component = $rs->next;
-while ($component) {
+my $rs = $tempseg->distinct_components_rs();
+my $component;
+while ( $component = $rs->next ) {
     my $comp = $component->components;
 
     my $friends = $tempseg->fetch_segment_conditions( 'component' => $comp, );
@@ -156,7 +156,7 @@ while ($component) {
     }
     my $inserts = $tempseg->storage->dbh_do( $push_reduced_segment_conditions,
         $string_array );
-    carp 'done with ', join q{,} $comp;
+    carp 'done with ', join q{,}, @{$comp};
 
 }
 
