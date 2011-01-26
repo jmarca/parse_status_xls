@@ -1,0 +1,107 @@
+SELECT me.ts FROM newctmlmap.segment_detector_events me WHERE ( ( detector_id ~ ? AND event ~ ? AND ( ts < ? AND ts >= ? ) ) ) GROUP BY me.ts ORDER BY ts: 'vdsid', 'observed|imputed', '2008-01-01 00:00:00', '2007-01-01 00:00:00'
+5 rows inserted for time 2007-01-01 00:00:04 at generate_versioned_segments.pl line 136
+5 rows inserted into component set for time 2007-01-01 00:00:04 to time 2007-01-01 00:00:14 at generate_versioned_segments.pl line 145
+4 rows inserted for time 2007-01-01 00:00:14 at generate_versioned_segments.pl line 136
+10 rows inserted into component set for time 2007-01-01 00:00:14 to time 2007-01-01 00:00:27 at generate_versioned_segments.pl line 145
+11 rows inserted for time 2007-01-01 00:00:27 at generate_versioned_segments.pl line 136
+17 rows inserted into component set for time 2007-01-01 00:00:27 to time 2007-01-01 00:01:00 at generate_versioned_segments.pl line 145
+3 rows inserted for time 2007-01-01 00:01:00 at generate_versioned_segments.pl line 136
+20 rows inserted into component set for time 2007-01-01 00:01:00 to time 2007-01-01 01:00:00 at generate_versioned_segments.pl line 145
+380 rows inserted for time 2007-01-01 01:00:00 at generate_versioned_segments.pl line 136
+727 rows inserted into component set for time 2007-01-01 01:00:00 to time 2007-01-01 02:00:00 at generate_versioned_segments.pl line 145
+217 rows inserted for time 2007-01-01 02:00:00 at generate_versioned_segments.pl line 136
+874 rows inserted into component set for time 2007-01-01 02:00:00 to time 2007-01-01 02:44:44 at generate_versioned_segments.pl line 145
+6 rows inserted for time 2007-01-01 02:44:44 at generate_versioned_segments.pl line 136
+880 rows inserted into component set for time 2007-01-01 02:44:44 to time 2007-01-01 03:00:00 at generate_versioned_segments.pl line 145
+148 rows inserted for time 2007-01-01 03:00:00 at generate_versioned_segments.pl line 136
+960 rows inserted into component set for time 2007-01-01 03:00:00 to time 2007-01-01 04:00:00 at generate_versioned_segments.pl line 145
+87 rows inserted for time 2007-01-01 04:00:00 at generate_versioned_segments.pl line 136
+1006 rows inserted into component set for time 2007-01-01 04:00:00 to time 2007-01-01 05:00:00 at generate_versioned_segments.pl line 145
+96 rows inserted for time 2007-01-01 05:00:00 at generate_versioned_segments.pl line 136
+1053 rows inserted into component set for time 2007-01-01 05:00:00 to time 2007-01-01 06:00:00 at generate_versioned_segments.pl line 145
+219 rows inserted for time 2007-01-01 06:00:00 at generate_versioned_segments.pl line 136
+1201 rows inserted into component set for time 2007-01-01 06:00:00 to time 2007-01-01 07:00:00 at generate_versioned_segments.pl line 145
+127 rows inserted for time 2007-01-01 07:00:00 at generate_versioned_segments.pl line 136
+1280 rows inserted into component set for time 2007-01-01 07:00:00 to time 2007-01-01 08:00:00 at generate_versioned_segments.pl line 145
+135 rows inserted for time 2007-01-01 08:00:00 at generate_versioned_segments.pl line 136
+1364 rows inserted into component set for time 2007-01-01 08:00:00 to time 2007-01-01 09:00:00 at generate_versioned_segments.pl line 145
+107 rows inserted for time 2007-01-01 09:00:00 at generate_versioned_segments.pl line 136
+1422 rows inserted into component set for time 2007-01-01 09:00:00 to time 2007-01-01 10:00:00 at generate_versioned_segments.pl line 145
+88 rows inserted for time 2007-01-01 10:00:00 at generate_versioned_segments.pl line 136
+1473 rows inserted into component set for time 2007-01-01 10:00:00 to time 2007-01-01 11:00:00 at generate_versioned_segments.pl line 145
+59 rows inserted for time 2007-01-01 11:00:00 at generate_versioned_segments.pl line 136
+703 rows inserted into component set for time 2007-01-01 11:00:00 to time 2007-01-01 12:00:00 at generate_versioned_segments.pl line 145
+74 rows inserted for time 2007-01-01 12:00:00 at generate_versioned_segments.pl line 136
+1554 rows inserted into component set for time 2007-01-01 12:00:00 to time 2007-01-01 13:00:00 at generate_versioned_segments.pl line 145
+28 rows inserted for time 2007-01-01 13:00:00 at generate_versioned_segments.pl line 136
+1571 rows inserted into component set for time 2007-01-01 13:00:00 to time 2007-01-01 14:00:00 at generate_versioned_segments.pl line 145
+30 rows inserted for time 2007-01-01 14:00:00 at generate_versioned_segments.pl line 136
+1586 rows inserted into component set for time 2007-01-01 14:00:00 to time 2007-01-01 15:00:00 at generate_versioned_segments.pl line 145
+41 rows inserted for time 2007-01-01 15:00:00 at generate_versioned_segments.pl line 136
+1608 rows inserted into component set for time 2007-01-01 15:00:00 to time 2007-01-01 16:00:00 at generate_versioned_segments.pl line 145
+42 rows inserted for time 2007-01-01 16:00:00 at generate_versioned_segments.pl line 136
+1637 rows inserted into component set for time 2007-01-01 16:00:00 to time 2007-01-01 17:00:00 at generate_versioned_segments.pl line 145
+24 rows inserted for time 2007-01-01 17:00:00 at generate_versioned_segments.pl line 136
+1648 rows inserted into component set for time 2007-01-01 17:00:00 to time 2007-01-01 18:00:00 at generate_versioned_segments.pl line 145
+16 rows inserted for time 2007-01-01 18:00:00 at generate_versioned_segments.pl line 136
+1660 rows inserted into component set for time 2007-01-01 18:00:00 to time 2007-01-01 19:00:00 at generate_versioned_segments.pl line 145
+34 rows inserted for time 2007-01-01 19:00:00 at generate_versioned_segments.pl line 136
+1683 rows inserted into component set for time 2007-01-01 19:00:00 to time 2007-01-01 20:00:00 at generate_versioned_segments.pl line 145
+7 rows inserted for time 2007-01-01 20:00:00 at generate_versioned_segments.pl line 136
+1689 rows inserted into component set for time 2007-01-01 20:00:00 to time 2007-01-01 21:00:00 at generate_versioned_segments.pl line 145
+20 rows inserted for time 2007-01-01 21:00:00 at generate_versioned_segments.pl line 136
+1703 rows inserted into component set for time 2007-01-01 21:00:00 to time 2007-01-01 22:00:00 at generate_versioned_segments.pl line 145
+19 rows inserted for time 2007-01-01 22:00:00 at generate_versioned_segments.pl line 136
+1720 rows inserted into component set for time 2007-01-01 22:00:00 to time 2007-01-01 23:00:00 at generate_versioned_segments.pl line 145
+16 rows inserted for time 2007-01-01 23:00:00 at generate_versioned_segments.pl line 136
+1734 rows inserted into component set for time 2007-01-01 23:00:00 to time 2007-01-02 00:00:00 at generate_versioned_segments.pl line 145
+31 rows inserted for time 2007-01-02 00:00:00 at generate_versioned_segments.pl line 136
+1760 rows inserted into component set for time 2007-01-02 00:00:00 to time 2007-01-02 01:00:00 at generate_versioned_segments.pl line 145
+17 rows inserted for time 2007-01-02 01:00:00 at generate_versioned_segments.pl line 136
+1769 rows inserted into component set for time 2007-01-02 01:00:00 to time 2007-01-02 02:00:00 at generate_versioned_segments.pl line 145
+15 rows inserted for time 2007-01-02 02:00:00 at generate_versioned_segments.pl line 136
+1779 rows inserted into component set for time 2007-01-02 02:00:00 to time 2007-01-02 03:00:00 at generate_versioned_segments.pl line 145
+15 rows inserted for time 2007-01-02 03:00:00 at generate_versioned_segments.pl line 136
+1787 rows inserted into component set for time 2007-01-02 03:00:00 to time 2007-01-02 04:00:00 at generate_versioned_segments.pl line 145
+6 rows inserted for time 2007-01-02 04:00:00 at generate_versioned_segments.pl line 136
+1791 rows inserted into component set for time 2007-01-02 04:00:00 to time 2007-01-02 05:00:00 at generate_versioned_segments.pl line 145
+10 rows inserted for time 2007-01-02 05:00:00 at generate_versioned_segments.pl line 136
+1798 rows inserted into component set for time 2007-01-02 05:00:00 to time 2007-01-02 06:00:00 at generate_versioned_segments.pl line 145
+8 rows inserted for time 2007-01-02 06:00:00 at generate_versioned_segments.pl line 136
+1805 rows inserted into component set for time 2007-01-02 06:00:00 to time 2007-01-02 07:00:00 at generate_versioned_segments.pl line 145
+8 rows inserted for time 2007-01-02 07:00:00 at generate_versioned_segments.pl line 136
+1811 rows inserted into component set for time 2007-01-02 07:00:00 to time 2007-01-02 08:00:00 at generate_versioned_segments.pl line 145
+12 rows inserted for time 2007-01-02 08:00:00 at generate_versioned_segments.pl line 136
+1820 rows inserted into component set for time 2007-01-02 08:00:00 to time 2007-01-02 09:00:00 at generate_versioned_segments.pl line 145
+9 rows inserted for time 2007-01-02 09:00:00 at generate_versioned_segments.pl line 136
+1825 rows inserted into component set for time 2007-01-02 09:00:00 to time 2007-01-02 10:00:00 at generate_versioned_segments.pl line 145
+26 rows inserted for time 2007-01-02 10:00:00 at generate_versioned_segments.pl line 136
+1842 rows inserted into component set for time 2007-01-02 10:00:00 to time 2007-01-02 11:00:00 at generate_versioned_segments.pl line 145
+51 rows inserted for time 2007-01-02 11:00:00 at generate_versioned_segments.pl line 136
+1905 rows inserted into component set for time 2007-01-02 11:00:00 to time 2007-01-02 11:20:05 at generate_versioned_segments.pl line 145
+1 rows inserted for time 2007-01-02 11:20:05 at generate_versioned_segments.pl line 136
+1906 rows inserted into component set for time 2007-01-02 11:20:05 to time 2007-01-02 12:00:00 at generate_versioned_segments.pl line 145
+12 rows inserted for time 2007-01-02 12:00:00 at generate_versioned_segments.pl line 136
+1915 rows inserted into component set for time 2007-01-02 12:00:00 to time 2007-01-02 13:00:00 at generate_versioned_segments.pl line 145
+8 rows inserted for time 2007-01-02 13:00:00 at generate_versioned_segments.pl line 136
+1925 rows inserted into component set for time 2007-01-02 13:00:00 to time 2007-01-02 13:39:30 at generate_versioned_segments.pl line 145
+12 rows inserted for time 2007-01-02 13:39:30 at generate_versioned_segments.pl line 136
+1933 rows inserted into component set for time 2007-01-02 13:39:30 to time 2007-01-02 13:40:00 at generate_versioned_segments.pl line 145
+2 rows inserted for time 2007-01-02 13:40:00 at generate_versioned_segments.pl line 136
+1934 rows inserted into component set for time 2007-01-02 13:40:00 to time 2007-01-02 13:40:30 at generate_versioned_segments.pl line 145
+2 rows inserted for time 2007-01-02 13:40:30 at generate_versioned_segments.pl line 136
+1935 rows inserted into component set for time 2007-01-02 13:40:30 to time 2007-01-02 13:44:30 at generate_versioned_segments.pl line 145
+2 rows inserted for time 2007-01-02 13:44:30 at generate_versioned_segments.pl line 136
+1936 rows inserted into component set for time 2007-01-02 13:44:30 to time 2007-01-02 13:45:00 at generate_versioned_segments.pl line 145
+2 rows inserted for time 2007-01-02 13:45:00 at generate_versioned_segments.pl line 136
+1937 rows inserted into component set for time 2007-01-02 13:45:00 to time 2007-01-02 13:49:00 at generate_versioned_segments.pl line 145
+4 rows inserted for time 2007-01-02 13:49:00 at generate_versioned_segments.pl line 136
+1939 rows inserted into component set for time 2007-01-02 13:49:00 to time 2007-01-02 14:00:00 at generate_versioned_segments.pl line 145
+364 rows inserted for time 2007-01-02 14:00:00 at generate_versioned_segments.pl line 136
+2685 rows inserted into component set for time 2007-01-02 14:00:00 to time 2007-01-02 15:00:00 at generate_versioned_segments.pl line 145
+112 rows inserted for time 2007-01-02 15:00:00 at generate_versioned_segments.pl line 136
+2769 rows inserted into component set for time 2007-01-02 15:00:00 to time 2007-01-02 15:36:30 at generate_versioned_segments.pl line 145
+2 rows inserted for time 2007-01-02 15:36:30 at generate_versioned_segments.pl line 136
+2770 rows inserted into component set for time 2007-01-02 15:36:30 to time 2007-01-02 16:00:00 at generate_versioned_segments.pl line 145
+75 rows inserted for time 2007-01-02 16:00:00 at generate_versioned_segments.pl line 136
+2815 rows inserted into component set for time 2007-01-02 16:00:00 to time 2007-01-02 17:00:00 at generate_versioned_segments.pl line 145

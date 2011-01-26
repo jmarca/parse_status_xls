@@ -1,0 +1,335 @@
+vdsid_1000110","vdsid_1000210","vdsid_1000310 at reduce_versioned_segments.pl line 152
+vdsid_1000110","vdsid_1000210","vdsid_1000310 at reduce_versioned_segments.pl line 152
+vdsid_1000110","vdsid_1000210","vdsid_1000310 at reduce_versioned_segments.pl line 152
+done with vdsid_1000110,vdsid_1000210,vdsid_1000310 at reduce_versioned_segments.pl line 159
+vdsid_1000110","vdsid_1000210","vdsid_1000410 at reduce_versioned_segments.pl line 152
+vdsid_1000110","vdsid_1000210","vdsid_1000410 at reduce_versioned_segments.pl line 152
+done with vdsid_1000110,vdsid_1000210,vdsid_1000410 at reduce_versioned_segments.pl line 159
+vdsid_1000210","vdsid_1000310","vdsid_1000410 at reduce_versioned_segments.pl line 152
+vdsid_1000210","vdsid_1000310","vdsid_1000410 at reduce_versioned_segments.pl line 152
+vdsid_1000210","vdsid_1000310","vdsid_1000410 at reduce_versioned_segments.pl line 152
+done with vdsid_1000210,vdsid_1000310,vdsid_1000410 at reduce_versioned_segments.pl line 159
+vdsid_1000210","vdsid_1000310","vdsid_1000510 at reduce_versioned_segments.pl line 152
+done with vdsid_1000210,vdsid_1000310,vdsid_1000510 at reduce_versioned_segments.pl line 159
+vdsid_1000210","vdsid_1000410","vdsid_1000510 at reduce_versioned_segments.pl line 152
+vdsid_1000210","vdsid_1000410","vdsid_1000510 at reduce_versioned_segments.pl line 152
+done with vdsid_1000210,vdsid_1000410,vdsid_1000510 at reduce_versioned_segments.pl line 159
+vdsid_1000210","vdsid_1000510","vdsid_1000610 at reduce_versioned_segments.pl line 152
+done with vdsid_1000210,vdsid_1000510,vdsid_1000610 at reduce_versioned_segments.pl line 159
+vdsid_1000210","vdsid_1000610","vdsid_1000810 at reduce_versioned_segments.pl line 152
+done with vdsid_1000210,vdsid_1000610,vdsid_1000810 at reduce_versioned_segments.pl line 159
+vdsid_1000310","vdsid_1000410","vdsid_1000510 at reduce_versioned_segments.pl line 152
+vdsid_1000310","vdsid_1000410","vdsid_1000510 at reduce_versioned_segments.pl line 152
+vdsid_1000310","vdsid_1000410","vdsid_1000510 at reduce_versioned_segments.pl line 152
+done with vdsid_1000310,vdsid_1000410,vdsid_1000510 at reduce_versioned_segments.pl line 159
+vdsid_1000310","vdsid_1000510","vdsid_1000610 at reduce_versioned_segments.pl line 152
+done with vdsid_1000310,vdsid_1000510,vdsid_1000610 at reduce_versioned_segments.pl line 159
+vdsid_1000310","vdsid_1000610","vdsid_1000710 at reduce_versioned_segments.pl line 152
+done with vdsid_1000310,vdsid_1000610,vdsid_1000710 at reduce_versioned_segments.pl line 159
+vdsid_1000410","vdsid_1000510","vdsid_1000610 at reduce_versioned_segments.pl line 152
+vdsid_1000410","vdsid_1000510","vdsid_1000610 at reduce_versioned_segments.pl line 152
+vdsid_1000410","vdsid_1000510","vdsid_1000610 at reduce_versioned_segments.pl line 152
+done with vdsid_1000410,vdsid_1000510,vdsid_1000610 at reduce_versioned_segments.pl line 159
+vdsid_1000510","vdsid_1000610","vdsid_1000710 at reduce_versioned_segments.pl line 152
+vdsid_1000510","vdsid_1000610","vdsid_1000710 at reduce_versioned_segments.pl line 152
+vdsid_1000510","vdsid_1000610","vdsid_1000710 at reduce_versioned_segments.pl line 152
+done with vdsid_1000510,vdsid_1000610,vdsid_1000710 at reduce_versioned_segments.pl line 159
+vdsid_1000510","vdsid_1000610","vdsid_1000810 at reduce_versioned_segments.pl line 152
+done with vdsid_1000510,vdsid_1000610,vdsid_1000810 at reduce_versioned_segments.pl line 159
+vdsid_1000610","vdsid_1000710","vdsid_1000810 at reduce_versioned_segments.pl line 152
+vdsid_1000610","vdsid_1000710","vdsid_1000810 at reduce_versioned_segments.pl line 152
+vdsid_1000610","vdsid_1000710","vdsid_1000810 at reduce_versioned_segments.pl line 152
+done with vdsid_1000610,vdsid_1000710,vdsid_1000810 at reduce_versioned_segments.pl line 159
+vdsid_1000610","vdsid_1000810","vdsid_1000910 at reduce_versioned_segments.pl line 152
+done with vdsid_1000610,vdsid_1000810,vdsid_1000910 at reduce_versioned_segments.pl line 159
+vdsid_1000710","vdsid_1000810","vdsid_1000910 at reduce_versioned_segments.pl line 152
+vdsid_1000710","vdsid_1000810","vdsid_1000910 at reduce_versioned_segments.pl line 152
+vdsid_1000710","vdsid_1000810","vdsid_1000910 at reduce_versioned_segments.pl line 152
+done with vdsid_1000710,vdsid_1000810,vdsid_1000910 at reduce_versioned_segments.pl line 159
+vdsid_1000810","vdsid_1000910","vdsid_1001010 at reduce_versioned_segments.pl line 152
+vdsid_1000810","vdsid_1000910","vdsid_1001010 at reduce_versioned_segments.pl line 152
+vdsid_1000810","vdsid_1000910","vdsid_1001010 at reduce_versioned_segments.pl line 152
+done with vdsid_1000810,vdsid_1000910,vdsid_1001010 at reduce_versioned_segments.pl line 159
+vdsid_1000810","vdsid_1000910","vdsid_1001110 at reduce_versioned_segments.pl line 152
+vdsid_1000810","vdsid_1000910","vdsid_1001110 at reduce_versioned_segments.pl line 152
+vdsid_1000810","vdsid_1000910","vdsid_1001110 at reduce_versioned_segments.pl line 152
+done with vdsid_1000810,vdsid_1000910,vdsid_1001110 at reduce_versioned_segments.pl line 159
+vdsid_1000810","vdsid_1000910","vdsid_1001210 at reduce_versioned_segments.pl line 152
+vdsid_1000810","vdsid_1000910","vdsid_1001210 at reduce_versioned_segments.pl line 152
+done with vdsid_1000810,vdsid_1000910,vdsid_1001210 at reduce_versioned_segments.pl line 159
+vdsid_1000810","vdsid_1000910","vdsid_1001310 at reduce_versioned_segments.pl line 152
+done with vdsid_1000810,vdsid_1000910,vdsid_1001310 at reduce_versioned_segments.pl line 159
+vdsid_1000810","vdsid_1001110","vdsid_1001410 at reduce_versioned_segments.pl line 152
+done with vdsid_1000810,vdsid_1001110,vdsid_1001410 at reduce_versioned_segments.pl line 159
+vdsid_1000910","vdsid_1001010","vdsid_1001210 at reduce_versioned_segments.pl line 152
+vdsid_1000910","vdsid_1001010","vdsid_1001210 at reduce_versioned_segments.pl line 152
+vdsid_1000910","vdsid_1001010","vdsid_1001210 at reduce_versioned_segments.pl line 152
+done with vdsid_1000910,vdsid_1001010,vdsid_1001210 at reduce_versioned_segments.pl line 159
+vdsid_1000910","vdsid_1001110","vdsid_1001310 at reduce_versioned_segments.pl line 152
+vdsid_1000910","vdsid_1001110","vdsid_1001310 at reduce_versioned_segments.pl line 152
+vdsid_1000910","vdsid_1001110","vdsid_1001310 at reduce_versioned_segments.pl line 152
+done with vdsid_1000910,vdsid_1001110,vdsid_1001310 at reduce_versioned_segments.pl line 159
+vdsid_1000910","vdsid_1001210","vdsid_1001110 at reduce_versioned_segments.pl line 152
+vdsid_1000910","vdsid_1001210","vdsid_1001110 at reduce_versioned_segments.pl line 152
+done with vdsid_1000910,vdsid_1001210,vdsid_1001110 at reduce_versioned_segments.pl line 159
+vdsid_1000910","vdsid_1001310","vdsid_1001610 at reduce_versioned_segments.pl line 152
+done with vdsid_1000910,vdsid_1001310,vdsid_1001610 at reduce_versioned_segments.pl line 159
+vdsid_1000910","vdsid_1001310","vdsid_1007710 at reduce_versioned_segments.pl line 152
+done with vdsid_1000910,vdsid_1001310,vdsid_1007710 at reduce_versioned_segments.pl line 159
+vdsid_1000910","vdsid_1001310","vdsid_759942 at reduce_versioned_segments.pl line 152
+done with vdsid_1000910,vdsid_1001310,vdsid_759942 at reduce_versioned_segments.pl line 159
+vdsid_1001010","vdsid_1001210","vdsid_1001110 at reduce_versioned_segments.pl line 152
+vdsid_1001010","vdsid_1001210","vdsid_1001110 at reduce_versioned_segments.pl line 152
+vdsid_1001010","vdsid_1001210","vdsid_1001110 at reduce_versioned_segments.pl line 152
+done with vdsid_1001010,vdsid_1001210,vdsid_1001110 at reduce_versioned_segments.pl line 159
+vdsid_1001110","vdsid_1001310","vdsid_1001410 at reduce_versioned_segments.pl line 152
+done with vdsid_1001110,vdsid_1001310,vdsid_1001410 at reduce_versioned_segments.pl line 159
+vdsid_1001110","vdsid_1001310","vdsid_1007710 at reduce_versioned_segments.pl line 152
+vdsid_1001110","vdsid_1001310","vdsid_1007710 at reduce_versioned_segments.pl line 152
+vdsid_1001110","vdsid_1001310","vdsid_1007710 at reduce_versioned_segments.pl line 152
+done with vdsid_1001110,vdsid_1001310,vdsid_1007710 at reduce_versioned_segments.pl line 159
+vdsid_1001110","vdsid_1001410","vdsid_1001610 at reduce_versioned_segments.pl line 152
+done with vdsid_1001110,vdsid_1001410,vdsid_1001610 at reduce_versioned_segments.pl line 159
+vdsid_1001210","vdsid_1001110","vdsid_1001310 at reduce_versioned_segments.pl line 152
+vdsid_1001210","vdsid_1001110","vdsid_1001310 at reduce_versioned_segments.pl line 152
+vdsid_1001210","vdsid_1001110","vdsid_1001310 at reduce_versioned_segments.pl line 152
+done with vdsid_1001210,vdsid_1001110,vdsid_1001310 at reduce_versioned_segments.pl line 159
+vdsid_1001310","vdsid_1001410","vdsid_1001610 at reduce_versioned_segments.pl line 152
+done with vdsid_1001310,vdsid_1001410,vdsid_1001610 at reduce_versioned_segments.pl line 159
+vdsid_1001310","vdsid_1001610","vdsid_1001810 at reduce_versioned_segments.pl line 152
+done with vdsid_1001310,vdsid_1001610,vdsid_1001810 at reduce_versioned_segments.pl line 159
+vdsid_1001310","vdsid_1007710","vdsid_1001410 at reduce_versioned_segments.pl line 152
+vdsid_1001310","vdsid_1007710","vdsid_1001410 at reduce_versioned_segments.pl line 152
+vdsid_1001310","vdsid_1007710","vdsid_1001410 at reduce_versioned_segments.pl line 152
+done with vdsid_1001310,vdsid_1007710,vdsid_1001410 at reduce_versioned_segments.pl line 159
+vdsid_1001310","vdsid_1007710","vdsid_1001610 at reduce_versioned_segments.pl line 152
+done with vdsid_1001310,vdsid_1007710,vdsid_1001610 at reduce_versioned_segments.pl line 159
+vdsid_1001310","vdsid_759942","vdsid_759933 at reduce_versioned_segments.pl line 152
+done with vdsid_1001310,vdsid_759942,vdsid_759933 at reduce_versioned_segments.pl line 159
+vdsid_1001410","vdsid_1001510","vdsid_1001810 at reduce_versioned_segments.pl line 152
+done with vdsid_1001410,vdsid_1001510,vdsid_1001810 at reduce_versioned_segments.pl line 159
+vdsid_1001410","vdsid_1001610","vdsid_1001510 at reduce_versioned_segments.pl line 152
+vdsid_1001410","vdsid_1001610","vdsid_1001510 at reduce_versioned_segments.pl line 152
+vdsid_1001410","vdsid_1001610","vdsid_1001510 at reduce_versioned_segments.pl line 152
+done with vdsid_1001410,vdsid_1001610,vdsid_1001510 at reduce_versioned_segments.pl line 159
+vdsid_1001410","vdsid_1001610","vdsid_1001710 at reduce_versioned_segments.pl line 152
+done with vdsid_1001410,vdsid_1001610,vdsid_1001710 at reduce_versioned_segments.pl line 159
+vdsid_1001510","vdsid_1001710","vdsid_1001810 at reduce_versioned_segments.pl line 152
+vdsid_1001510","vdsid_1001710","vdsid_1001810 at reduce_versioned_segments.pl line 152
+vdsid_1001510","vdsid_1001710","vdsid_1001810 at reduce_versioned_segments.pl line 152
+done with vdsid_1001510,vdsid_1001710,vdsid_1001810 at reduce_versioned_segments.pl line 159
+vdsid_1001510","vdsid_1001810","vdsid_1001910 at reduce_versioned_segments.pl line 152
+vdsid_1001510","vdsid_1001810","vdsid_1001910 at reduce_versioned_segments.pl line 152
+done with vdsid_1001510,vdsid_1001810,vdsid_1001910 at reduce_versioned_segments.pl line 159
+vdsid_1001510","vdsid_1001910","vdsid_1009310 at reduce_versioned_segments.pl line 152
+done with vdsid_1001510,vdsid_1001910,vdsid_1009310 at reduce_versioned_segments.pl line 159
+vdsid_1001610","vdsid_1001510","vdsid_1001710 at reduce_versioned_segments.pl line 152
+vdsid_1001610","vdsid_1001510","vdsid_1001710 at reduce_versioned_segments.pl line 152
+vdsid_1001610","vdsid_1001510","vdsid_1001710 at reduce_versioned_segments.pl line 152
+done with vdsid_1001610,vdsid_1001510,vdsid_1001710 at reduce_versioned_segments.pl line 159
+vdsid_1001610","vdsid_1001510","vdsid_1001810 at reduce_versioned_segments.pl line 152
+done with vdsid_1001610,vdsid_1001510,vdsid_1001810 at reduce_versioned_segments.pl line 159
+vdsid_1001610","vdsid_1001510","vdsid_1001910 at reduce_versioned_segments.pl line 152
+done with vdsid_1001610,vdsid_1001510,vdsid_1001910 at reduce_versioned_segments.pl line 159
+vdsid_1001610","vdsid_1001710","vdsid_1001810 at reduce_versioned_segments.pl line 152
+done with vdsid_1001610,vdsid_1001710,vdsid_1001810 at reduce_versioned_segments.pl line 159
+vdsid_1001610","vdsid_1001810","vdsid_1007910 at reduce_versioned_segments.pl line 152
+done with vdsid_1001610,vdsid_1001810,vdsid_1007910 at reduce_versioned_segments.pl line 159
+vdsid_1001610","vdsid_1001810","vdsid_1009310 at reduce_versioned_segments.pl line 152
+done with vdsid_1001610,vdsid_1001810,vdsid_1009310 at reduce_versioned_segments.pl line 159
+vdsid_1001610","vdsid_1001810","vdsid_759942 at reduce_versioned_segments.pl line 152
+done with vdsid_1001610,vdsid_1001810,vdsid_759942 at reduce_versioned_segments.pl line 159
+vdsid_1001610","vdsid_1001910","vdsid_1009310 at reduce_versioned_segments.pl line 152
+done with vdsid_1001610,vdsid_1001910,vdsid_1009310 at reduce_versioned_segments.pl line 159
+vdsid_1001710","vdsid_1001810","vdsid_1001910 at reduce_versioned_segments.pl line 152
+vdsid_1001710","vdsid_1001810","vdsid_1001910 at reduce_versioned_segments.pl line 152
+vdsid_1001710","vdsid_1001810","vdsid_1001910 at reduce_versioned_segments.pl line 152
+done with vdsid_1001710,vdsid_1001810,vdsid_1001910 at reduce_versioned_segments.pl line 159
+vdsid_1001710","vdsid_1001810","vdsid_1009310 at reduce_versioned_segments.pl line 152
+done with vdsid_1001710,vdsid_1001810,vdsid_1009310 at reduce_versioned_segments.pl line 159
+vdsid_1001810","vdsid_1001910","vdsid_1003410 at reduce_versioned_segments.pl line 152
+vdsid_1001810","vdsid_1001910","vdsid_1003410 at reduce_versioned_segments.pl line 152
+vdsid_1001810","vdsid_1001910","vdsid_1003410 at reduce_versioned_segments.pl line 152
+done with vdsid_1001810,vdsid_1001910,vdsid_1003410 at reduce_versioned_segments.pl line 159
+vdsid_1001810","vdsid_1001910","vdsid_1003510 at reduce_versioned_segments.pl line 152
+done with vdsid_1001810,vdsid_1001910,vdsid_1003510 at reduce_versioned_segments.pl line 159
+vdsid_1001810","vdsid_1001910","vdsid_1003610 at reduce_versioned_segments.pl line 152
+done with vdsid_1001810,vdsid_1001910,vdsid_1003610 at reduce_versioned_segments.pl line 159
+vdsid_1001810","vdsid_1001910","vdsid_1009310 at reduce_versioned_segments.pl line 152
+done with vdsid_1001810,vdsid_1001910,vdsid_1009310 at reduce_versioned_segments.pl line 159
+vdsid_1001810","vdsid_1007910","vdsid_759942 at reduce_versioned_segments.pl line 152
+done with vdsid_1001810,vdsid_1007910,vdsid_759942 at reduce_versioned_segments.pl line 159
+vdsid_1001810","vdsid_1009310","vdsid_1007910 at reduce_versioned_segments.pl line 152
+done with vdsid_1001810,vdsid_1009310,vdsid_1007910 at reduce_versioned_segments.pl line 159
+vdsid_1001810","vdsid_759942","vdsid_759933 at reduce_versioned_segments.pl line 152
+done with vdsid_1001810,vdsid_759942,vdsid_759933 at reduce_versioned_segments.pl line 159
+vdsid_1001910","vdsid_1003410","vdsid_1003510 at reduce_versioned_segments.pl line 152
+vdsid_1001910","vdsid_1003410","vdsid_1003510 at reduce_versioned_segments.pl line 152
+vdsid_1001910","vdsid_1003410","vdsid_1003510 at reduce_versioned_segments.pl line 152
+done with vdsid_1001910,vdsid_1003410,vdsid_1003510 at reduce_versioned_segments.pl line 159
+vdsid_1001910","vdsid_1003410","vdsid_1003610 at reduce_versioned_segments.pl line 152
+done with vdsid_1001910,vdsid_1003410,vdsid_1003610 at reduce_versioned_segments.pl line 159
+vdsid_1001910","vdsid_1003510","vdsid_1003610 at reduce_versioned_segments.pl line 152
+done with vdsid_1001910,vdsid_1003510,vdsid_1003610 at reduce_versioned_segments.pl line 159
+vdsid_1001910","vdsid_1003510","vdsid_1009310 at reduce_versioned_segments.pl line 152
+done with vdsid_1001910,vdsid_1003510,vdsid_1009310 at reduce_versioned_segments.pl line 159
+vdsid_1001910","vdsid_1003610","vdsid_1009310 at reduce_versioned_segments.pl line 152
+done with vdsid_1001910,vdsid_1003610,vdsid_1009310 at reduce_versioned_segments.pl line 159
+vdsid_1001910","vdsid_1009310","vdsid_1007910 at reduce_versioned_segments.pl line 152
+vdsid_1001910","vdsid_1009310","vdsid_1007910 at reduce_versioned_segments.pl line 152
+done with vdsid_1001910,vdsid_1009310,vdsid_1007910 at reduce_versioned_segments.pl line 159
+vdsid_1001910","vdsid_1009310","vdsid_1205583 at reduce_versioned_segments.pl line 152
+done with vdsid_1001910,vdsid_1009310,vdsid_1205583 at reduce_versioned_segments.pl line 159
+vdsid_1002010","vdsid_1002110","vdsid_1002210 at reduce_versioned_segments.pl line 152
+vdsid_1002010","vdsid_1002110","vdsid_1002210 at reduce_versioned_segments.pl line 152
+done with vdsid_1002010,vdsid_1002110,vdsid_1002210 at reduce_versioned_segments.pl line 159
+vdsid_1002010","vdsid_1002110","vdsid_1002310 at reduce_versioned_segments.pl line 152
+vdsid_1002010","vdsid_1002110","vdsid_1002310 at reduce_versioned_segments.pl line 152
+vdsid_1002010","vdsid_1002110","vdsid_1002310 at reduce_versioned_segments.pl line 152
+done with vdsid_1002010,vdsid_1002110,vdsid_1002310 at reduce_versioned_segments.pl line 159
+vdsid_1002010","vdsid_1002110","vdsid_1003310 at reduce_versioned_segments.pl line 152
+done with vdsid_1002010,vdsid_1002110,vdsid_1003310 at reduce_versioned_segments.pl line 159
+starting vdsid_1002110,vdsid_1002210,vdsid_1002510 at reduce_versioned_segments.pl line 127
+{"vdsid_1002110","vdsid_1002210","vdsid_1002510"} at reduce_versioned_segments.pl line 147
+$VAR1 = [
+          '"{""vdsid_1002110"",""vdsid_1002210"",""vdsid_1002510""}","2009-01-02 06:00:00","2009-01-02 22:00:00","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"'
+        ];
+ at reduce_versioned_segments.pl line 180
+done with {"vdsid_1002110","vdsid_1002210","vdsid_1002510"} at reduce_versioned_segments.pl line 183
+starting vdsid_1002110,vdsid_1002210,vdsid_1002710 at reduce_versioned_segments.pl line 127
+{"vdsid_1002110","vdsid_1002210","vdsid_1002710"} at reduce_versioned_segments.pl line 147
+$VAR1 = [
+          '"{""vdsid_1002110"",""vdsid_1002210"",""vdsid_1002710""}","2009-01-01 21:00:00","2009-01-02 06:00:00","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"'
+        ];
+ at reduce_versioned_segments.pl line 180
+done with {"vdsid_1002110","vdsid_1002210","vdsid_1002710"} at reduce_versioned_segments.pl line 183
+starting vdsid_1002110,vdsid_1002210,vdsid_1002910 at reduce_versioned_segments.pl line 127
+{"vdsid_1002110","vdsid_1002210","vdsid_1002910"} at reduce_versioned_segments.pl line 147
+$VAR1 = [
+          '"{""vdsid_1002110"",""vdsid_1002210"",""vdsid_1002910""}","2009-01-01 18:00:00","2009-01-01 21:00:00","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"'
+        ];
+ at reduce_versioned_segments.pl line 180
+done with {"vdsid_1002110","vdsid_1002210","vdsid_1002910"} at reduce_versioned_segments.pl line 183
+starting vdsid_1002110,vdsid_1002210,vdsid_1003110 at reduce_versioned_segments.pl line 127
+{"vdsid_1002110","vdsid_1002210","vdsid_1003110"} at reduce_versioned_segments.pl line 147
+$VAR1 = [
+          '"{""vdsid_1002110"",""vdsid_1002210"",""vdsid_1003110""}","2009-01-01 11:00:00","2009-01-01 18:00:00","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"'
+        ];
+ at reduce_versioned_segments.pl line 180
+done with {"vdsid_1002110","vdsid_1002210","vdsid_1003110"} at reduce_versioned_segments.pl line 183
+starting vdsid_1002110,vdsid_1002210,vdsid_1003310 at reduce_versioned_segments.pl line 127
+{"vdsid_1002110","vdsid_1002210","vdsid_1003310"} at reduce_versioned_segments.pl line 147
+$VAR1 = [
+          '"{""vdsid_1002110"",""vdsid_1002210"",""vdsid_1003310""}","2009-01-01 07:00:00","2009-01-01 11:00:00","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"'
+        ];
+ at reduce_versioned_segments.pl line 180
+done with {"vdsid_1002110","vdsid_1002210","vdsid_1003310"} at reduce_versioned_segments.pl line 183
+starting vdsid_1002110,vdsid_1002310,vdsid_1002210 at reduce_versioned_segments.pl line 127
+{"vdsid_1002110","vdsid_1002310","vdsid_1002210"} at reduce_versioned_segments.pl line 147
+$VAR1 = [
+          '"{""vdsid_1002110"",""vdsid_1002310"",""vdsid_1002210""}","2007-01-01 05:00:00","2008-01-01 00:00:03","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"',
+          '"{""vdsid_1002110"",""vdsid_1002310"",""vdsid_1002210""}","2008-01-02 19:00:00","2009-01-01 00:00:00","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"',
+          '"{""vdsid_1002110"",""vdsid_1002310"",""vdsid_1002210""}","2009-01-02 22:00:00","2009-12-31 23:00:00","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"'
+        ];
+ at reduce_versioned_segments.pl line 180
+done with {"vdsid_1002110","vdsid_1002310","vdsid_1002210"} at reduce_versioned_segments.pl line 183
+Use of uninitialized value $comp in join or string at reduce_versioned_segments.pl line 127.
+starting vdsid_1002110,vdsid_1003310, at reduce_versioned_segments.pl line 127
+{"vdsid_1002110","vdsid_1003310",NULL} at reduce_versioned_segments.pl line 147
+$VAR1 = [
+          '"{""vdsid_1002110"",""vdsid_1003310"",NULL}","2009-01-01 05:00:00","2009-01-01 07:00:00","event ~* \'observed|imputed\' and detector_id ~* \'vdsid\'"'
+        ];
+ at reduce_versioned_segments.pl line 180
+done with {"vdsid_1002110","vdsid_1003310",NULL} at reduce_versioned_segments.pl line 183
+starting vdsid_1002210,vdsid_1002410,vdsid_1002510 at reduce_versioned_segments.pl line 127
+{"vdsid_1002210","vdsid_1002410","vdsid_1002510"} at reduce_versioned_segments.pl line 147
+starting vdsid_1002210,vdsid_1002410,vdsid_1002510 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1002410","vdsid_1002510"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002210,vdsid_1002410,vdsid_1002610 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1002410","vdsid_1002610"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002210,vdsid_1002510,vdsid_1002610 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1002510","vdsid_1002610"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002210,vdsid_1002510,vdsid_1002710 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1002510","vdsid_1002710"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002210,vdsid_1002610,vdsid_1002910 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1002610","vdsid_1002910"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002210,vdsid_1002710,vdsid_1002910 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1002710","vdsid_1002910"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002210,vdsid_1002910,vdsid_1003110 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1002910","vdsid_1003110"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002210,vdsid_1003110,vdsid_1003310 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1003110","vdsid_1003310"} at reduce_versioned_segments.pl line 181
+Use of uninitialized value $comp in join or string at reduce_versioned_segments.pl line 127.
+starting vdsid_1002210,vdsid_1003310, at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002210","vdsid_1003310",NULL} at reduce_versioned_segments.pl line 181
+starting vdsid_1002310,vdsid_1002210,vdsid_1002410 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002310","vdsid_1002210","vdsid_1002410"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002310,vdsid_1002210,vdsid_1002510 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002310","vdsid_1002210","vdsid_1002510"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002410,vdsid_1002510,vdsid_1002610 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002410","vdsid_1002510","vdsid_1002610"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002410,vdsid_1002610,vdsid_1002710 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002410","vdsid_1002610","vdsid_1002710"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002510,vdsid_1002610,vdsid_1002710 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002510","vdsid_1002610","vdsid_1002710"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002510,vdsid_1002710,vdsid_1002910 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002510","vdsid_1002710","vdsid_1002910"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002610,vdsid_1002710,vdsid_1002810 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002610","vdsid_1002710","vdsid_1002810"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002610,vdsid_1002710,vdsid_1002910 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002610","vdsid_1002710","vdsid_1002910"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002610,vdsid_1002910,vdsid_1003010 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002610","vdsid_1002910","vdsid_1003010"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002710,vdsid_1002810,vdsid_1002910 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002710","vdsid_1002810","vdsid_1002910"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002710,vdsid_1002910,vdsid_1003010 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002710","vdsid_1002910","vdsid_1003010"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002710,vdsid_1002910,vdsid_1003110 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002710","vdsid_1002910","vdsid_1003110"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002810,vdsid_1002910,vdsid_1003010 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002810","vdsid_1002910","vdsid_1003010"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002910,vdsid_1003010,vdsid_1003110 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002910","vdsid_1003010","vdsid_1003110"} at reduce_versioned_segments.pl line 181
+starting vdsid_1002910,vdsid_1003110,vdsid_1003310 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1002910","vdsid_1003110","vdsid_1003310"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003010,vdsid_1003110,vdsid_1003210 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003010","vdsid_1003110","vdsid_1003210"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003010,vdsid_1003110,vdsid_1003310 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003010","vdsid_1003110","vdsid_1003310"} at reduce_versioned_segments.pl line 181
+Use of uninitialized value $comp in join or string at reduce_versioned_segments.pl line 127.
+starting vdsid_1003010,vdsid_1003110, at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003010","vdsid_1003110",NULL} at reduce_versioned_segments.pl line 181
+starting vdsid_1003110,vdsid_1003210,vdsid_1003310 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003110","vdsid_1003210","vdsid_1003310"} at reduce_versioned_segments.pl line 181
+Use of uninitialized value $comp in join or string at reduce_versioned_segments.pl line 127.
+starting vdsid_1003110,vdsid_1003210, at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003110","vdsid_1003210",NULL} at reduce_versioned_segments.pl line 181
+Use of uninitialized value $comp in join or string at reduce_versioned_segments.pl line 127.
+starting vdsid_1003110,vdsid_1003310, at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003110","vdsid_1003310",NULL} at reduce_versioned_segments.pl line 181
+Use of uninitialized value $comp in join or string at reduce_versioned_segments.pl line 127.
+starting vdsid_1003210,vdsid_1003310, at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003210","vdsid_1003310",NULL} at reduce_versioned_segments.pl line 181
+starting vdsid_1003410,vdsid_1003510,vdsid_1003610 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003410","vdsid_1003510","vdsid_1003610"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003410,vdsid_1003610,vdsid_1009310 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003410","vdsid_1003610","vdsid_1009310"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003510,vdsid_1003610,vdsid_1007910 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003510","vdsid_1003610","vdsid_1007910"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003510,vdsid_1003610,vdsid_1009310 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003510","vdsid_1003610","vdsid_1009310"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003510,vdsid_1009310,vdsid_1007910 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003510","vdsid_1009310","vdsid_1007910"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003610,vdsid_1007910,vdsid_759942 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003610","vdsid_1007910","vdsid_759942"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003610,vdsid_1009310,vdsid_1007910 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003610","vdsid_1009310","vdsid_1007910"} at reduce_versioned_segments.pl line 181
+Use of uninitialized value $comp in join or string at reduce_versioned_segments.pl line 127.
+starting vdsid_1003710,vdsid_1003810, at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003710","vdsid_1003810",NULL} at reduce_versioned_segments.pl line 181
+starting vdsid_1003710,vdsid_1004410,vdsid_1003810 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003710","vdsid_1004410","vdsid_1003810"} at reduce_versioned_segments.pl line 181
+starting vdsid_1003710,vdsid_1004510,vdsid_1004410 at reduce_versioned_segments.pl line 127
+done with {"vdsid_1003710","vdsid_1004510","vdsid_1004410"} at reduce_versioned_segments.pl line 181
+Use of uninitialized value $comp in join or string at reduce_versioned_segments.pl line 127.
+starting vdsid_1003810,vdsid_1003910, at reduce_versioned_segments.pl line 127

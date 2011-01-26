@@ -124,7 +124,27 @@ my $component;
 while ( $component = $rs->next ) {
     my $comp = $component->components;
 
-    my $friends = $tempseg->fetch_segment_conditions( 'component' => $comp, );
+    carp  'starting ', join q{,}, @{$comp};
+    # replace any undef values with 'NULL'
+    # $comp = [ map $_ ? $_ : 'NULL',  @{$comp} ];
+    # convert to a string now as a convenience below (twice)
+
+    my $components_string;
+    for my $i (0 .. 2){
+      my $next = 'NULL';
+      if(  defined $comp->[$i] ){
+        $next = join q{},q{"},$comp->[$i],q{"};
+      }
+      if(!$i){
+        $components_string =  $next;
+      }else{
+        $components_string = join q{,},$components_string, $next;
+      }
+    }
+
+    $components_string = join q{},q/{/,$components_string,q/}/;
+
+    my $friends = $tempseg->fetch_segment_conditions( 'component' => $components_string, );
     my $row;
     my $copy;
     my $newrecords = {};
@@ -148,15 +168,17 @@ while ( $component = $rs->next ) {
         push @{$record_array}, @{$value};
     }
     while ( my $line = shift @{$record_array} ) {
-        my $components = join q{","}, @{ shift @{$line} };
-        carp $components;
-        $components = join q{}, '{"', $components, q/"}/;
-        $csv->combine( $components, @{$line} );
+        my $components = shift @{$line};
+
+        # already converted to a string, just use it, burning the above array element
+
+        # dump the rest of the record as csv
+        $csv->combine( $components_string, @{$line} );
         push @{$string_array}, $csv->string();
     }
     my $inserts = $tempseg->storage->dbh_do( $push_reduced_segment_conditions,
         $string_array );
-    carp 'done with ', join q{,}, @{$comp};
+    carp "done with $components_string";
 
 }
 
