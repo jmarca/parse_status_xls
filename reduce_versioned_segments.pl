@@ -106,9 +106,7 @@ my $push_reduced_segment_conditions = sub {
     my ( $storage, $dbh, $data ) = @_;
     $dbh->do('COPY tempseg.reduced_detector_segment_conditions (components,ts,endts,condition) from STDIN with csv' );
     while ( my $line = shift @{$data} ) {
-        my @d =  map {$line->{$_}} qw{components ts endts condition};
-        $csv->combine( @d );
-        $dbh->pg_putcopydata( $csv->string() . "\n" );
+        $dbh->pg_putcopydata( $line . "\n" );
     }
     $dbh->pg_putcopyend();
     return;
@@ -120,32 +118,44 @@ my $push_reduced_segment_conditions = sub {
 $tempseg->create_db();
 
 # get a hook into the components I need to simplify
-my $rs        = $tempseg->detector_segment_conditions_components_rs();
+my $rs        = $tempseg->distinct_components_rs();
 my $component = $rs->next;
 while ($component) {
     my $comp    = $component->components;
-    my $cond    = $component->conditions;
-    croak "$comp, $cond";
+
     my $friends = $tempseg->fetch_segment_conditions(
         'component' => $comp,
-        'condition' => $cond,
     );
-    my $row = $friends->next;
-    # copy
-    my $copy = [ map {$row->$_} qw{components ts endts condition}];
-    my $newrecords = [ $copy ];
+    my $row;
+    my $copy;
+    my $newrecords = {};
+
     while ( $row = $friends->next ) {
-        if ( $newrecords->[-1]->endts == $row->ts ) {
-            $newrecords->[-1]->endts = $row->endts;
+        if ( ! defined $newrecords->{$row->condition} ){
+          $copy = [ map {$row->$_} qw{components ts endts condition}];
+          $newrecords->{$row->condition} = [$copy];
+        }elsif($newrecords->{$row->condition}->[-1]->[2] eq $row->ts){
+            $newrecords->{$row->condition}->[-1]->[2] = $row->endts;
         }
         else {
           $copy = [ map {$row->$_} qw{components ts endts condition}];
-            push @{$newrecords}, $copy;
+          push @{$newrecords->{$row->condition}}, $copy;
         }
     }
-    my $inserts = $tempseg->storage->dbh_do( $push_reduced_segment_conditions,$newrecords);
-    carp "$inserts rows inserted into reduced event set for $comp and $cond";
-}
+    my $record_array = [];
+    my $string_array=[];
+    for my $value (values %{$newrecords}){
+      push @{$record_array},@{$value};
+    }
+    while ( my $line = shift @{$record_array} ) {
+        my $components =  join q{","}, @{shift @{$line}} ;
+        carp $components;
+        $components = join q{}, '{"', $components , q/"}/;
+        $csv->combine( $components, @{$line} );
+        push @{ $string_array}, $csv->string();
+      }
+    my $inserts = $tempseg->storage->dbh_do( $push_reduced_segment_conditions,$string_array);
+    croak "$inserts rows inserted into reduced event set for ", Dumper $comp;}
 
 1;
 
