@@ -99,19 +99,20 @@ my $tempseg = 'OSM::NumRoutes'->new(
 
 );
 
-  # make a csv dumper
-  my $csv = Text::CSV->new();
+# make a csv dumper
+my $csv = Text::CSV->new();
 
 my $push_reduced_segment_conditions = sub {
     my ( $storage, $dbh, $data ) = @_;
-    $dbh->do('COPY tempseg.reduced_detector_segment_conditions (components,ts,endts,condition) from STDIN with csv' );
+    $dbh->do(
+'COPY tempseg.reduced_detector_segment_conditions (components,ts,endts,condition) from STDIN with csv'
+    );
     while ( my $line = shift @{$data} ) {
         $dbh->pg_putcopydata( $line . "\n" );
     }
     $dbh->pg_putcopyend();
     return;
 };
-
 
 # make sure the tracking CouchDB db has been created
 
@@ -121,41 +122,43 @@ $tempseg->create_db();
 my $rs        = $tempseg->distinct_components_rs();
 my $component = $rs->next;
 while ($component) {
-    my $comp    = $component->components;
+    my $comp = $component->components;
 
-    my $friends = $tempseg->fetch_segment_conditions(
-        'component' => $comp,
-    );
+    my $friends = $tempseg->fetch_segment_conditions( 'component' => $comp, );
     my $row;
     my $copy;
     my $newrecords = {};
 
     while ( $row = $friends->next ) {
-        if ( ! defined $newrecords->{$row->condition} ){
-          $copy = [ map {$row->$_} qw{components ts endts condition}];
-          $newrecords->{$row->condition} = [$copy];
-        }elsif($newrecords->{$row->condition}->[-1]->[2] eq $row->ts){
-            $newrecords->{$row->condition}->[-1]->[2] = $row->endts;
+        if ( !defined $newrecords->{ $row->condition } ) {
+            $copy = [ map { $row->$_ } qw{components ts endts condition} ];
+            $newrecords->{ $row->condition } = [$copy];
+        }
+        elsif ( $newrecords->{ $row->condition }->[-1]->[2] eq $row->ts ) {
+            $newrecords->{ $row->condition }->[-1]->[2] = $row->endts;
         }
         else {
-          $copy = [ map {$row->$_} qw{components ts endts condition}];
-          push @{$newrecords->{$row->condition}}, $copy;
+            $copy = [ map { $row->$_ } qw{components ts endts condition} ];
+            push @{ $newrecords->{ $row->condition } }, $copy;
         }
     }
     my $record_array = [];
-    my $string_array=[];
-    for my $value (values %{$newrecords}){
-      push @{$record_array},@{$value};
+    my $string_array = [];
+    for my $value ( values %{$newrecords} ) {
+        push @{$record_array}, @{$value};
     }
     while ( my $line = shift @{$record_array} ) {
-        my $components =  join q{","}, @{shift @{$line}} ;
+        my $components = join q{","}, @{ shift @{$line} };
         carp $components;
-        $components = join q{}, '{"', $components , q/"}/;
+        $components = join q{}, '{"', $components, q/"}/;
         $csv->combine( $components, @{$line} );
-        push @{ $string_array}, $csv->string();
-      }
-    my $inserts = $tempseg->storage->dbh_do( $push_reduced_segment_conditions,$string_array);
-    croak "$inserts rows inserted into reduced event set for ", Dumper $comp;}
+        push @{$string_array}, $csv->string();
+    }
+    my $inserts = $tempseg->storage->dbh_do( $push_reduced_segment_conditions,
+        $string_array );
+    carp 'done with ', join q{,} $comp;
+
+}
 
 1;
 
