@@ -113,7 +113,6 @@ my $tempseg = 'OSM::NumRoutes'->new(
 $tempseg->detector_condition('vdsid|wim');
 $tempseg->create_db();
 
-
 # get the timestamps I care about
 # my $event_rs      = $ctmlmap->seg_detector_event_rs();
 # my $segment_event = $event_rs->next;
