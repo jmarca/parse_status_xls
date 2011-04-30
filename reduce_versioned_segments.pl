@@ -105,7 +105,7 @@ my $csv = Text::CSV->new();
 my $push_reduced_segment_conditions = sub {
     my ( $storage, $dbh, $data ) = @_;
     $dbh->do(
-'COPY tempseg.reduced_detector_segment_conditions (components,ts,endts,condition) from STDIN with csv'
+'COPY tempseg.reduced_detector_segment_conditions (components,direction,ts,endts,condition) from STDIN with csv'
     );
     while ( my $line = shift @{$data} ) {
         $dbh->pg_putcopydata( $line . "\n" );
@@ -128,7 +128,7 @@ while ( $component = $rs->next ) {
     # replace any undef values with 'NULL'
     # $comp = [ map $_ ? $_ : 'NULL',  @{$comp} ];
     # convert to a string now as a convenience below (twice)
-    croak;
+
     my $components_string;
     for my $i (0 .. 2){
       my $next = 'NULL';
@@ -154,9 +154,13 @@ while ( $component = $rs->next ) {
             $copy = [ map { $row->$_ } qw{components direction ts endts condition} ];
             $newrecords->{ $row->condition } = [$copy];
         }
-        elsif ( $newrecords->{ $row->condition }->[-1]->[2] eq $row->ts ) {
-            $newrecords->{ $row->condition }->[-1]->[2] = $row->endts;
+        ####################################################
+        ## beware.  dead reconing into the above array.  element 3 === endts
+        ####################################################
+        elsif ( $newrecords->{ $row->condition }->[-1]->[3] eq $row->ts ) {
+            $newrecords->{ $row->condition }->[-1]->[3] = $row->endts;
         }
+        ####################################################
         else {
             $copy = [ map { $row->$_ } qw{components direction ts endts condition} ];
             push @{ $newrecords->{ $row->condition } }, $copy;
