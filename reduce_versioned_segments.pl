@@ -123,12 +123,12 @@ my $rs = $tempseg->distinct_components_rs();
 my $component;
 while ( $component = $rs->next ) {
     my $comp = $component->components;
-
-    carp  'starting ', join q{,}, @{$comp};
+    my $direction = $component->direction;
+    carp  'starting ', join q{,}, @{$comp}, $direction;
     # replace any undef values with 'NULL'
     # $comp = [ map $_ ? $_ : 'NULL',  @{$comp} ];
     # convert to a string now as a convenience below (twice)
-
+    croak;
     my $components_string;
     for my $i (0 .. 2){
       my $next = 'NULL';
@@ -144,21 +144,21 @@ while ( $component = $rs->next ) {
 
     $components_string = join q{},q/{/,$components_string,q/}/;
 
-    my $friends = $tempseg->fetch_segment_conditions( 'component' => $components_string, );
+    my $friends = $tempseg->fetch_segment_conditions2( 'component' => $components_string, );
     my $row;
     my $copy;
     my $newrecords = {};
 
     while ( $row = $friends->next ) {
         if ( !defined $newrecords->{ $row->condition } ) {
-            $copy = [ map { $row->$_ } qw{components ts endts condition} ];
+            $copy = [ map { $row->$_ } qw{components direction ts endts condition} ];
             $newrecords->{ $row->condition } = [$copy];
         }
         elsif ( $newrecords->{ $row->condition }->[-1]->[2] eq $row->ts ) {
             $newrecords->{ $row->condition }->[-1]->[2] = $row->endts;
         }
         else {
-            $copy = [ map { $row->$_ } qw{components ts endts condition} ];
+            $copy = [ map { $row->$_ } qw{components direction ts endts condition} ];
             push @{ $newrecords->{ $row->condition } }, $copy;
         }
     }

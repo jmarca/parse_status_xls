@@ -133,8 +133,9 @@ my $tempseg = 'OSM::NumRoutes'->new(
 );
 
 # make sure the tracking CouchDB db has been created
-
 $tempseg->create_db();
+
+$tempseg->detector_condition('vdsid|wim');
 
 # get the timestamps I care about
 my $event_rs      = $ctmlmap->seg_detector_event_rs();

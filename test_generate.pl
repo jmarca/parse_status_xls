@@ -118,7 +118,7 @@ $tempseg->create_db();
 # my $segment_event = $event_rs->next;
 # while ($segment_event) {
 #    my $ts      = $segment_event->ts;
-my $ts = '2008-01-01 11:00:00';
+my $ts = '2008-01-01 12:00:00';
     my $friends = $tempseg->automated_versioned_segment_insert($ts);
     carp "$friends rows inserted for time $ts";
     # $segment_event = $event_rs->next;
@@ -126,7 +126,7 @@ my $ts = '2008-01-01 11:00:00';
     # if ($segment_event) {
     #     $nextts = $segment_event->ts;
     # }
-my $nextts= '2008-01-01 12:00:00';
+my $nextts= '2008-01-01 13:00:00';
     my $components = $tempseg->automated_versioned_segment_components_insert($ts,$nextts);
 
     carp
