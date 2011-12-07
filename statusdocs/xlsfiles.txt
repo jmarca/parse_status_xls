@@ -1,0 +1,26 @@
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0109/IRD 01-2009 MONTHLY SITE STATUS.xls"
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0109/PAT 01-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0209/IRD 02-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0209/PAT 02-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0309/BAD DATA/IRD 03-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0309/BAD DATA/PAT 03-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0409/IRD 04-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0409/PAT 04-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0509/IRD 05-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0509/PAT 05-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0609/IRD 06-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0609/PAT 06-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0709/07-2009.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0709/IRD 07-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0709/PAT 07-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0809/IRD 08-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0809/PAT 08-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0909/IRD 09-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/0909/PAT 09-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/1009/IRD 10-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/1009/PAT 10-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/1109/IRD 11-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/1109/PAT 11-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/1209/Copy of IRD 12-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/1209/IRD 12-2009 MONTHLY SITE STATUS.xls" .
+cp "/var/lib/wim/ftp.arb.ca.gov/pub/outgoing/WIM_2009/1209/PAT 12-2009 MONTHLY SITE STATUS.xls" .

@@ -12,7 +12,7 @@ use Spreadsheet::Read;
 use Getopt::Long;
 use DateTime::Format::DateParse;
 use DateTime::Format::Pg;
-use Testbed::Spatial::VDS::Schema;
+use Testbed::Spatial::VDS::Schema::Public;
 
 my @files = ();
 my $db    = 'spatialvds';
@@ -39,7 +39,7 @@ if ( !@files ) {
 }
 
 my $vdb =
-  Testbed::Spatial::VDS::Schema->connect( "dbi:Pg:dbname=$db;host=$host",
+  Testbed::Spatial::VDS::Schema::Public->connect( "dbi:Pg:dbname=$db;host=$host",
     $dbuser, $dbpass );
 
 my @bulk;
@@ -48,6 +48,7 @@ sub checkbulk {
     my $args    = shift;
     my $datarow = $vdb->resultset('WimStatus')->find($args);
     if ($datarow) {
+      carp 'already have entry for ', Dumper $args;
         return 0;
     }
     else {
@@ -110,12 +111,14 @@ foreach my $file (@files) {
     my $month = $ref->[1]->{'E1'};
     my $ts    = DateTime::Format::DateParse->parse_datetime("$month 1, $year");
     my $row   = 2;
+    carp Dumper $row;
     while ( $ref->[1]->{"A$row"} ) {
         my $site          = $ref->[1]->{"A$row"};
         my $class_status  = $ref->[1]->{"E$row"};
         my $class_notes   = $ref->[1]->{"F$row"};
         my $weight_status = $ref->[1]->{"H$row"};
         my $weight_notes  = $ref->[1]->{"I$row"};
+	carp "( $site, $class_status, $class_notes, $weight_status, $weight_notes )";
         foreach ( $site, $class_status, $class_notes, $weight_status,
             $weight_notes )
         {
@@ -142,6 +145,7 @@ foreach my $file (@files) {
             }
 
             # otherwise, nothing to see here.  move along
+	    carp 'nada';
             next;
         }
 
