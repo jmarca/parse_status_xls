@@ -105,7 +105,7 @@ my $csv = Text::CSV->new();
 my $push_reduced_segment_conditions = sub {
     my ( $storage, $dbh, $data ) = @_;
     $dbh->do(
-'COPY tempseg.reduced_detector_segment_conditions (components,ts,endts,condition) from STDIN with csv'
+'COPY tempseg.reduced_detector_segment_conditions (components,direction,ts,endts,condition) from STDIN with csv'
     );
     while ( my $line = shift @{$data} ) {
         $dbh->pg_putcopydata( $line . "\n" );
@@ -123,9 +123,11 @@ my $rs = $tempseg->distinct_components_rs('reverse'=>1 );
 my $component;
 while ( $component = $rs->next ) {
     my $comp = $component->components;
+    my $direction = $component->direction;
+    my $condition = $component->condition;
 
-    # replace any undef values with 'NULL'
-    # $comp = [ map $_ ? $_ : 'NULL',  @{$comp} ];
+    # first form the components string for searching on
+
     # convert to a string now as a convenience below (twice)
 
     my $components_string;
@@ -142,31 +144,120 @@ while ( $component = $rs->next ) {
     }
 
     $components_string = join q{},q/{/,$components_string,q/}/;
-    carp  "starting $components_string";
+
+    carp  'starting ', join q{,}, $components_string, $direction;
 
 
-    my $friends = $tempseg->fetch_segment_conditions( 'component' => $components_string );
     my $row;
     my $copy;
     my $newrecords = {};
 
+    my $friends = $tempseg->fetch_segment_conditions2( 'component' => $components_string,
+                                                       'direction' => $direction,
+                                                     );
+
     while ( $row = $friends->next ) {
-        if ( !defined $newrecords->{ $row->condition } ) {
-            $copy = [ map { $row->$_ } qw{components ts endts condition} ];
-            $newrecords->{ $row->condition } = [$copy];
+
+        if ( !defined $newrecords->{ join q/./,$row->condition,$row->direction } ) {
+            $copy = [ map { $row->$_ } qw{components direction ts endts condition} ];
+            $newrecords->{ join q/./,$row->condition,$row->direction } = [$copy];
         }
-        elsif ( $newrecords->{ $row->condition }->[-1]->[2] eq $row->ts ) {
-            $newrecords->{ $row->condition }->[-1]->[2] = $row->endts;
+        ####################################################
+        ## beware.  dead reconing into the above array.  element 3 === endts
+        ####################################################
+        elsif ( $newrecords->{ join q/./,$row->condition,$row->direction }->[-1]->[3] eq $row->ts ) {
+            $newrecords->{ join q/./,$row->condition,$row->direction }->[-1]->[3] = $row->endts;
         }
+        ####################################################
         else {
-            $copy = [ map { $row->$_ } qw{components ts endts condition} ];
-            push @{ $newrecords->{ $row->condition } }, $copy;
+            $copy = [ map { $row->$_ } qw{components direction ts endts condition} ];
+            push @{ $newrecords->{ join q/./,$row->condition,$row->direction } }, $copy;
         }
     }
+
+    # check if already in reduced set
+
+    ## select in ReducedDetectorSegmentCondition for this components,
+    ## condition, direction.  You will get one or more results, with
+    ## distinct time perioeds.  put them into a hash where they belong,
+    ## and then process the data, then save and/or update as needed.
+
+    # my $rdsc_rs =
+    #   $tempseg->resultset('ReducedDetectorSegmentCondition')->search(
+    #     {
+    #         'components' => $components_string,
+    #         'condition'  => $condition,
+    #         'direction'  => $direction,
+    #     }
+    #   );
+
     my $record_array = [];
     my $string_array = [];
-    for my $value ( values %{$newrecords} ) {
-        push @{$record_array}, @{$value};
+    for my $conddir_records ( values %{$newrecords} ) {
+
+        ####################################################
+        ## beware.  dead reconing into the above array.  element 3 === endts
+        ####################################################
+        for my $value ( @{$conddir_records} ) {
+
+            my $ts    = $value->[2];
+            my $endts = $value->[3];
+
+            # check existing reduced detector segment conditions overlaps
+            my $overlap_rs =
+              $tempseg->resultset('ReducedDetectorSegmentCondition')->search(
+                {
+                    'components' => $components_string,
+                    'condition'  => $condition,
+                    'direction'  => $direction,
+                    'ts'         => { '<=', $ts },      # existing starts before
+                    'endts'      => {
+                        '>=', $ts,     # existing ends after beginning
+                        '>',  $endts   # existing ends after ending
+                    },
+                }
+              );
+            my $overlap = $overlap_rs->single();
+
+            if ($overlap) {
+
+                # skip it
+
+                next;
+
+            }
+
+            # check existing is extendable
+            my $upto_rs =
+              $tempseg->resultset('ReducedDetectorSegmentCondition')->search(
+                {
+                    'components' => $components_string,
+                    'condition'  => $condition,
+                    'direction'  => $direction,
+                    'ts' => { '<=', $ts },    # existing starts before
+                    'endts' => {
+                        '>=', $ts,            # existing ends after beginning
+                        '<=', $endts          # existing ends before or at ending
+                    },
+                }
+            );
+            my $existing = $upto_rs->single();
+            if ($existing) {
+                # dbix::class has a problem with nulls in array values, so...
+                # use the result set to do the update
+                $upto_rs->update(
+                                  {
+                                   'endts'=>$endts,
+                                  },
+                                  {
+                                   'components'=>$components_string,
+                                  },
+                                 );
+            }
+            else {
+                push @{$record_array}, $value;
+            }
+        }
     }
     while ( my $line = shift @{$record_array} ) {
         my $components = shift @{$line};
@@ -177,6 +268,9 @@ while ( $component = $rs->next ) {
         $csv->combine( $components_string, @{$line} );
         push @{$string_array}, $csv->string();
     }
+
+    carp 'going to save ', scalar @{$string_array};
+
     my $inserts = $tempseg->storage->dbh_do( $push_reduced_segment_conditions,
         $string_array );
     carp "done with $components_string";
