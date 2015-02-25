@@ -8,7 +8,7 @@ use Carp;
 use Data::Dumper;
 
 use CalVAD::WIM::ParseStatusSpreadsheeets 0.2.3;
-use CalVAD::WIM::StoreStatusSpreadsheeets;
+use CalVAD::WIM::StoreStatusSpreadsheeets 0.2.4;
 
 
 use Getopt::Long;
