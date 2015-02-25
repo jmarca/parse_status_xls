@@ -2,192 +2,157 @@
 
 use warnings;
 use strict;
-use Data::Dumper;
-use version; our $VERSION = qv('0.0.2');
+use version; our $VERSION = qv('0.2.1');
 use English qw(-no_match_vars);
 use Carp;
+use Data::Dumper;
 
-use Spreadsheet::Read;
+use CalVAD::WIM::ParseStatusSpreadsheeets;
+use CalVAD::WIM::StoreStatusSpreadsheeets;
+
 
 use Getopt::Long;
-use DateTime::Format::DateParse;
-use DateTime::Format::Pg;
-use Testbed::Spatial::VDS::Schema::Public;
+use Pod::Usage;
 
+
+##################################################
+# initialize with command line options
+##################################################
 my @files = ();
 my $db    = 'spatialvds';
 my $host  = 'metis.its.uci.edu';
+my $port  = 5432;
+my $pattern = '.*status.*\.xlsx?$';
 my $dbuser;
-my $dbpass;
-my $year   = 2007;
+my $dbpass = '';
+my $year;
+my $path;
+my $help;
+
 my $result = GetOptions(
-    'files:s'    => \@files,
-    'year:i'     => \$year,
-    'database:s' => \$db,
+    'files=s'    => \@files,
+    'year=i'     => \$year,
+    'database=s' => \$db,
     'user=s'     => \$dbuser,
-    'pass=s'     => \$dbpass,
+    'host=s'     => \$host,
+    'port=i'     => \$port,
+    'pattern=s'  => \$pattern,
+    'path=s'     => \$path,
+    'help|?'     => \$help
 );
-
-if (@files) {
-    my $temp_string = join q{,}, @files;
-
-    @files = split /,/sxm, $temp_string;
-}
-if ( !@files ) {
-    croak
-'need to have files passed on the command line with option --files="somefile.xls,anotherfile.xls" --files="yetanother.xls"';
+if ( !$result || $help ) {
+    pod2usage(1);
 }
 
-my $vdb =
-  Testbed::Spatial::VDS::Schema::Public->connect( "dbi:Pg:dbname=$db;host=$host",
-    $dbuser, $dbpass );
+if((!@files && !$path) ||
+   (@files && $path)){
+    pod2usage(1);
+}
 
-my @bulk;
+if(!@files){
+    # read files according to passed command line arguments
 
-sub checkbulk {
-    my $args    = shift;
-    my $datarow = $vdb->resultset('WimStatus')->find($args);
-    if ($datarow) {
-      carp 'already have entry for ', Dumper $args;
-        return 0;
+    carp "directory path is $path, looking for $pattern";
+
+    sub loadfiles {
+        if (-f) {
+            push @files, grep { /$pattern/isxm } $File::Find::name;
+        }
+        return;
     }
-    else {
-        return 1;
-    }
+    File::Find::find( \&loadfiles, $path );
+
+    @files = sort { $a cmp $b } @files;
+
 }
-my @created_codes = ();
-
-sub check_status_code {
-    my $code    = shift;
-    my $datarow = $vdb->resultset('WimStatusCodes')->find($code);
-    if ( !$datarow ) {
-
-        # need to enter status code into table
-        $vdb->resultset('WimStatusCodes')->create( { 'status' => $code } );
-        push @created_codes, $code;
-    }
-    return;
-}
-
-sub bulksave {
-
-    # take the arguments, create 24 entries in the bulk save list
-    my $args = shift;
-    my $ts   = $args->{'ts'};
-    if (
-        checkbulk(
-            {
-                'site_no' => $args->{'site_no'},
-                'ts'      => $ts,
-            }
-        )
-      )
-    {
-        check_status_code( $args->{'class_status'} );
-        check_status_code( $args->{'weight_status'} );
-
-        push @bulk,
-          {
-            'site_no'       => $args->{'site_no'},
-            'ts'            => $ts,
-            'class_status'  => $args->{'class_status'},
-            'class_notes'   => $args->{'class_notes'},
-            'weight_status' => $args->{'weight_status'},
-            'weight_notes'  => $args->{'weight_notes'},
-          };
-    }
-    return scalar @bulk;
-}
-
-# parse all files in the list of files to parse.
-
-# this version will parse the monthly IRD and PAT xls files
+carp 'going to process ', scalar @files, ' files:' ,Dumper @files;
 
 foreach my $file (@files) {
-    carp "processing $file";
-    my $ref = ReadData($file);
-
-# row 1 is headers.  Parse from Row 2 onwards.  Bail when no more data in col 1, row n
-    my $month = $ref->[1]->{'E1'};
-    my $ts    = DateTime::Format::DateParse->parse_datetime("$month 1, $year");
-    my $row   = 2;
-    carp Dumper $row;
-    while ( $ref->[1]->{"A$row"} ) {
-        my $site          = $ref->[1]->{"A$row"};
-        my $class_status  = $ref->[1]->{"E$row"};
-        my $class_notes   = $ref->[1]->{"F$row"};
-        my $weight_status = $ref->[1]->{"H$row"};
-        my $weight_notes  = $ref->[1]->{"I$row"};
-	carp "( $site, $class_status, $class_notes, $weight_status, $weight_notes )";
-        foreach ( $site, $class_status, $class_notes, $weight_status,
-            $weight_notes )
-        {
-            s/^\s+//sxm;
-            s/\s+$//sxm;
+    my $yr=$year;
+    if(!$year){
+        # extract from filename
+        if($file =~ /(19\d{2})|(2\d{3})/){
+            $yr = $1 || $2;
+            #carp "regex saw $1 $2"
         }
-        if ( !$class_status || !$weight_status ) {
-
-            # possible mistake
-            if (   ( $class_status || $weight_status )
-                || ( $class_notes || $weight_notes ) )
-            {
-
-                # um, oops!
-                carp Dumper {
-                    'site_no'       => $site,
-                    'ts'            => DateTime::Format::Pg->format_date($ts),
-                    'class_status'  => $class_status,
-                    'class_notes'   => $class_notes,
-                    'weight_status' => $weight_status,
-                    'weight_notes'  => $weight_notes,
-                };
-                croak 'inconsistent data';
-            }
-
-            # otherwise, nothing to see here.  move along
-	    carp 'nada';
-            next;
-        }
-
-    # 	carp Dumper {
-    #                 'site_no'       => $site,
-    #                 'ts'            => DateTime::Format::Pg->format_date($ts),
-    #                 'class_status'  => $class_status,
-    #                 'class_notes'    => $class_notes,
-    #                 'weight_status' => $weight_status,
-    #                 'weight_notes'   => $weight_notes,
-    #             };
-        bulksave(
-            {
-                'site_no'       => $site,
-                'ts'            => DateTime::Format::Pg->format_date($ts),
-                'class_status'  => $class_status,
-                'class_notes'   => $class_notes,
-                'weight_status' => $weight_status,
-                'weight_notes'  => $weight_notes,
-            }
+    }
+    if(!$year && !$yr){
+        croak "no year for file $file.  You'll need to pass the year (using --year) and perhaps this file (using --file) on the command line";
+    }
+    carp "processing $file with year $yr";
+    my $obj = CalVAD::WIM::ParseStatusSpreadsheeets->new(
+         'past_month'=>0,
+         'file'=>$file,
+         'year'=>$yr,
         );
-    }
-    continue {
+    my $data = $obj->data;
+    # look at past month as well to catch any quirks
+    carp 'got ', scalar @{$data},' rows of data';
 
-        # increment the row
-        $row++;
-    }
+    $obj = CalVAD::WIM::ParseStatusSpreadsheeets->new(
+        'past_month'=>1,
+        'file'=>$file,
+        'year'=>$yr,
+        );
+    my $moredata = $obj->data;
 
-    #done parsing this report
-    if (@bulk) {
-        my $output = $vdb->resultset('WimStatus')->populate( \@bulk );
-        @bulk = ();
-    }
+    carp 'got ', scalar @{$moredata},' rows of data in second pass (look at past month)';
 
-    # look at the next file
+    push @{$data}, @{$moredata};
+    carp 'got ', scalar @{$data},' rows of data in second pass (look at past month)';
+
+    my $saver = CalVAD::WIM::StoreStatusSpreadsheeets->new
+        ('host_psql'=>$host,
+         'port_psql'=>$port,
+         'dbname_psql'=>$db,
+         'username_psql'=>$dbuser,
+         'password_psql'=>$dbpass,
+         'data'=>$data
+        );
+    $saver->save_data();
 }
 
-#all done.  spit any status files that were created
-carp 'created status fields in db', Dumper( \@created_codes );
 
-#buh-bye
 1;
+
 
 __END__
 
+
+=head1 NAME
+
+    parse_wim_status.pl - parse status spreasheets and write the contents to a database table
+
+=head1 DESCRIPTION
+
+    Bparse_wim_status.pl will read the given input file(s) and save the data to the specified
+    db.
+
+=head1 VERSION
+
+    this is the 3rd version
+
+=head1 USAGE
+
+    perl -w parse_wim_status.pl --path /data/wim/raw/data/ -y 2013
+
+=head1 REQUIRED ARGUMENTS
+
+       -path     the root directory below which can be found the target files
+
+       -year     the year (for example, 2007) you want to process.  If left blank, the program will try to guess based on the higher level directories
+
+
+=head1 OPTIONS
+
+
+       -help     brief help message
+       -username optional, username for the pg database
+       -password optional, password for the pg database
+       -host     optional, host to use for postgresql
+       -db       optional, database to use for postgresql, defaults to spatialvds
+       -port     optional, defaults to pg standard
+
+
+
+       and other options I am too lazy to document
