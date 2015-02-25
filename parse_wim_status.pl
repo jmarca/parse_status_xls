@@ -7,7 +7,7 @@ use English qw(-no_match_vars);
 use Carp;
 use Data::Dumper;
 
-use CalVAD::WIM::ParseStatusSpreadsheeets;
+use CalVAD::WIM::ParseStatusSpreadsheeets 0.2.3;
 use CalVAD::WIM::StoreStatusSpreadsheeets;
 
 
