@@ -28,6 +28,7 @@ my $dbpass = '';
 my $year;
 my $path;
 my $help;
+my $write_undefined = 0;
 
 my $result = GetOptions(
     'files=s'    => \@files,
@@ -37,6 +38,7 @@ my $result = GetOptions(
     'host=s'     => \$host,
     'port=i'     => \$port,
     'pattern=s'  => \$pattern,
+    'write_undefined'  => \$write_undefined,
     'path=s'     => \$path,
     'help|?'     => \$help
 );
@@ -81,6 +83,7 @@ foreach my $file (@files) {
     }
     carp "processing $file with year $yr";
     my $obj = CalVAD::WIM::ParseStatusSpreadsheeets->new(
+        'write_undefined'=>$write_undefined,
          'past_month'=>0,
          'file'=>$file,
          'year'=>$yr,
@@ -153,6 +156,10 @@ __END__
        -db       optional, database to use for postgresql, defaults to spatialvds
        -port     optional, defaults to pg standard
 
-
+       -write_undefined boolean, defaults to false.  If set, then
+           values that are not defined in the spreadsheet will be set
+           to "UNDEFINED" in the database.  This isn't a good idea on
+           the first pass, because maybe the next month has a valid
+           value for that entry?
 
        and other options I am too lazy to document
