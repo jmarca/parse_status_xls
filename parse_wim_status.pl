@@ -93,6 +93,7 @@ foreach my $file (@files) {
     carp 'got ', scalar @{$data},' rows of data';
 
     $obj = CalVAD::WIM::ParseStatusSpreadsheeets->new(
+        'write_undefined'=>$write_undefined,
         'past_month'=>1,
         'file'=>$file,
         'year'=>$yr,
