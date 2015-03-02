@@ -88,6 +88,15 @@ foreach my $file (@files) {
          'file'=>$file,
          'year'=>$yr,
         );
+    # validate some things
+    my $test_yr = $obj->year;
+    croak "$test_yr is not $yr" unless ($test_yr == $yr);
+
+    my $test_ts = $obj->ts;
+    carp "double check $file, as $test_ts has a day of 15" if ($test_ts =~ /15$/);
+
+
+
     my $data = $obj->data;
     # look at past month as well to catch any quirks
     carp 'got ', scalar @{$data},' rows of data';
