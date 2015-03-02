@@ -1,0 +1,243 @@
+directory path is /home/james/Downloads/xlsfiles/, looking for \/(ird|pat).*2013.*status.*\.xlsx?$ at parse_wim_status.pl line 57.
+going to process 12 files:$VAR1 = '/home/james/Downloads/xlsfiles/IRD 01-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR2 = '/home/james/Downloads/xlsfiles/IRD 02-2013 MONTHLY SITE STATUS.xlsx';
+$VAR3 = '/home/james/Downloads/xlsfiles/IRD 03-2013 MONTHLY SITE STATUS.xlsx';
+$VAR4 = '/home/james/Downloads/xlsfiles/IRD 04-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR5 = '/home/james/Downloads/xlsfiles/IRD 05-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR6 = '/home/james/Downloads/xlsfiles/IRD 06-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR7 = '/home/james/Downloads/xlsfiles/IRD 07-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR8 = '/home/james/Downloads/xlsfiles/IRD 08-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR9 = '/home/james/Downloads/xlsfiles/IRD 09-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR10 = '/home/james/Downloads/xlsfiles/IRD 10-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR11 = '/home/james/Downloads/xlsfiles/IRD 11-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR12 = '/home/james/Downloads/xlsfiles/IRD 12-2013 MONTHLY SITE STATUSBA.xlsx';
+ at parse_wim_status.pl line 70.
+processing /home/james/Downloads/xlsfiles/IRD 01-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 02-2013 MONTHLY SITE STATUS.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 03-2013 MONTHLY SITE STATUS.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+fgcolor of note is undefined but the note exists; assuming good class status for row 37 file /home/james/Downloads/xlsfiles/IRD 03-2013 MONTHLY SITE STATUS.xlsx at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 62) line 7.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 04-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 71 file /home/james/Downloads/xlsfiles/IRD 04-2013 MONTHLY SITE STATUSBA.xlsx at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 62) line 7.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 05-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 06-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'class_notes' => '',
+          'class_status' => 'XX',
+          'site_no' => '5',
+          'ts' => '2013-06-01',
+          'weight_status' => 'xx',
+          'weight_notes' => ''
+        };
+ at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 07-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 08-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 09-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 10-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 11-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 12-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+directory path is /home/james/Downloads/xlsfiles/, looking for \/(ird|pat).*2013.*status.*\.xlsx?$ at parse_wim_status.pl line 57.
+going to process 12 files:$VAR1 = '/home/james/Downloads/xlsfiles/IRD 01-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR2 = '/home/james/Downloads/xlsfiles/IRD 02-2013 MONTHLY SITE STATUS.xlsx';
+$VAR3 = '/home/james/Downloads/xlsfiles/IRD 03-2013 MONTHLY SITE STATUS.xlsx';
+$VAR4 = '/home/james/Downloads/xlsfiles/IRD 04-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR5 = '/home/james/Downloads/xlsfiles/IRD 05-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR6 = '/home/james/Downloads/xlsfiles/IRD 06-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR7 = '/home/james/Downloads/xlsfiles/IRD 07-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR8 = '/home/james/Downloads/xlsfiles/IRD 08-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR9 = '/home/james/Downloads/xlsfiles/IRD 09-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR10 = '/home/james/Downloads/xlsfiles/IRD 10-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR11 = '/home/james/Downloads/xlsfiles/IRD 11-2013 MONTHLY SITE STATUSBA.xlsx';
+$VAR12 = '/home/james/Downloads/xlsfiles/IRD 12-2013 MONTHLY SITE STATUSBA.xlsx';
+ at parse_wim_status.pl line 70.
+processing /home/james/Downloads/xlsfiles/IRD 01-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 02-2013 MONTHLY SITE STATUS.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 03-2013 MONTHLY SITE STATUS.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/IRD 03-2013 MONTHLY SITE STATUS.xlsx$VAR1 = {
+          'site_no' => '39',
+          'weight_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'class_notes' => '',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  ',
+          'weight_status' => 'G',
+          'ts' => '2013-02-01'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 62) line 7.
+fgcolor of note is undefined but the note exists; assuming good class status for row 37 file /home/james/Downloads/xlsfiles/IRD 03-2013 MONTHLY SITE STATUS.xlsx at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 62) line 7.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 04-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 71 file /home/james/Downloads/xlsfiles/IRD 04-2013 MONTHLY SITE STATUSBA.xlsx at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 62) line 7.
+got 117 rows of data at parse_wim_status.pl line 102.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/IRD 04-2013 MONTHLY SITE STATUSBA.xlsx$VAR1 = {
+          'site_no' => '86',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  ',
+          'ts' => '2013-03-01',
+          'weight_status' => 'B',
+          'class_status' => 'UNDEFINED',
+          'class_notes' => '',
+          'weight_notes' => 'High Wgt Over  Lane #1, #2, #3 and #4'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 62) line 7.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 05-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 06-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 07-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 08-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 09-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 10-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 11-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 12-2013 MONTHLY SITE STATUSBA.xlsx with year 2013 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.

@@ -1,0 +1,794 @@
+directory path is /home/james/Downloads/xlsfiles/, looking for \/(ird|pat).*2012.*status.*\.xlsx?$ at parse_wim_status.pl line 57.
+going to process 15 files:$VAR1 = '/home/james/Downloads/xlsfiles/IRD 01-2012 MONTHLY SITE STATUS.xlsx';
+$VAR2 = '/home/james/Downloads/xlsfiles/IRD 02-2012 MONTHLY SITE STATUS.xlsx';
+$VAR3 = '/home/james/Downloads/xlsfiles/IRD 03-2012 MONTHLY SITE STATUS.xlsx';
+$VAR4 = '/home/james/Downloads/xlsfiles/IRD 04-2012 MONTHLY SITE STATUS.xlsx';
+$VAR5 = '/home/james/Downloads/xlsfiles/IRD 05-2012 MONTHLY SITE STATUS.xlsx';
+$VAR6 = '/home/james/Downloads/xlsfiles/IRD 06-2012 MONTHLY SITE STATUS.xlsx';
+$VAR7 = '/home/james/Downloads/xlsfiles/IRD 07-2012 MONTHLY SITE STATUS.xlsx';
+$VAR8 = '/home/james/Downloads/xlsfiles/IRD 08-2012 MONTHLY SITE STATUS.xlsx';
+$VAR9 = '/home/james/Downloads/xlsfiles/IRD 09-2012 MONTHLY SITE STATUS.xlsx';
+$VAR10 = '/home/james/Downloads/xlsfiles/IRD 10-2012 MONTHLY SITE STATUS.xlsx';
+$VAR11 = '/home/james/Downloads/xlsfiles/IRD 11-2012 MONTHLY SITE STATUSBA.xlsx';
+$VAR12 = '/home/james/Downloads/xlsfiles/IRD 12-2012 MONTHLY SITE STATUSBA.xlsx';
+$VAR13 = '/home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls';
+$VAR14 = '/home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls';
+$VAR15 = '/home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls';
+ at parse_wim_status.pl line 70.
+processing /home/james/Downloads/xlsfiles/IRD 01-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'ts' => '2012-01-01',
+          'site_no' => '856',
+          'class_status' => 'B',
+          'internal_weight_notes' => '',
+          'weight_notes' => '',
+          'class_notes' => "high class \x{d8}",
+          'internal_class_notes' => "high class \x{d8}",
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 02-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'internal_class_notes' => "high class \x{d8} = B",
+          'weight_status' => '',
+          'weight_notes' => '',
+          'class_notes' => "high class \x{d8}",
+          'internal_weight_notes' => '',
+          'ts' => '2012-01-01',
+          'site_no' => '856',
+          'class_status' => 'B'
+        };
+ at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 03-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 04-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 05-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 06-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 07-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 08-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_notes' => 'HIGH WGTDIFF #2 lane',
+          'ts' => '2012-08-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to B based on RED (#ff0000) weight note color.  ',
+          'site_no' => '844',
+          'class_status' => '',
+          'class_notes' => '',
+          'weight_status' => 'B'
+        };
+ at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 09-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 10-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 116 rows of data at parse_wim_status.pl line 102.
+got 116 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 232 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 11-2012 MONTHLY SITE STATUSBA.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_notes' => '',
+          'ts' => '2012-10-01',
+          'class_notes' => '',
+          'class_status' => '',
+          'site_no' => '109',
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 12-2012 MONTHLY SITE STATUSBA.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls with year 2012 at parse_wim_status.pl line 84.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data at parse_wim_status.pl line 102.
+got 4 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 8 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => 'G',
+          'site_no' => '86',
+          'class_status' => '',
+          'class_notes' => '',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  '
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'site_no' => '109',
+          'class_notes' => '',
+          'class_status' => '',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  ',
+          'weight_status' => 'G'
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => '',
+          'weight_notes' => '',
+          'ts' => '2012-01-01',
+          'site_no' => '870',
+          'class_notes' => '',
+          'class_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_notes' => '',
+          'ts' => '2012-01-01',
+          'site_no' => '872',
+          'class_status' => '',
+          'class_notes' => '',
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'class_notes' => '',
+          'class_status' => '',
+          'site_no' => '870',
+          'ts' => '2012-12-01',
+          'weight_notes' => '',
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => '',
+          'class_notes' => '',
+          'class_status' => '',
+          'site_no' => '872',
+          'ts' => '2012-12-01',
+          'weight_notes' => ''
+        };
+ at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls with year 2012 at parse_wim_status.pl line 84.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data at parse_wim_status.pl line 102.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 8 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => 'G',
+          'site_no' => '86',
+          'class_status' => '',
+          'class_notes' => '',
+          'ts' => '2012-02-01',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  '
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  ',
+          'ts' => '2012-02-01',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'class_status' => '',
+          'class_notes' => '',
+          'site_no' => '109',
+          'weight_status' => 'G'
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_notes' => '',
+          'ts' => '2012-02-01',
+          'class_status' => '',
+          'class_notes' => '',
+          'site_no' => '870',
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => '',
+          'weight_notes' => '',
+          'ts' => '2012-02-01',
+          'site_no' => '872',
+          'class_status' => '',
+          'class_notes' => ''
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  ',
+          'site_no' => '86',
+          'class_notes' => '',
+          'class_status' => '',
+          'weight_status' => 'G'
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => 'G',
+          'class_status' => '',
+          'class_notes' => '',
+          'site_no' => '109',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  ',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'ts' => '2012-01-01'
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => '',
+          'ts' => '2012-01-01',
+          'weight_notes' => '',
+          'class_notes' => '',
+          'class_status' => '',
+          'site_no' => '870'
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'class_status' => '',
+          'class_notes' => '',
+          'site_no' => '872',
+          'ts' => '2012-01-01',
+          'weight_notes' => '',
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls with year 2012 at parse_wim_status.pl line 84.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data at parse_wim_status.pl line 102.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 8 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => 'G',
+          'site_no' => '86',
+          'class_notes' => '',
+          'class_status' => '',
+          'ts' => '2012-03-01',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  '
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  ',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'ts' => '2012-03-01',
+          'class_notes' => '',
+          'class_status' => '',
+          'site_no' => '109',
+          'weight_status' => 'G'
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'site_no' => '870',
+          'class_status' => '',
+          'class_notes' => '',
+          'weight_notes' => '',
+          'ts' => '2012-03-01',
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'class_notes' => '',
+          'class_status' => '',
+          'site_no' => '872',
+          'weight_notes' => '',
+          'ts' => '2012-03-01',
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'site_no' => '86',
+          'class_status' => '',
+          'class_notes' => '',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'ts' => '2012-02-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  ',
+          'weight_status' => 'G'
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  ',
+          'ts' => '2012-02-01',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'class_status' => '',
+          'class_notes' => '',
+          'site_no' => '109',
+          'weight_status' => 'G'
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'weight_status' => '',
+          'weight_notes' => '',
+          'ts' => '2012-02-01',
+          'site_no' => '870',
+          'class_status' => '',
+          'class_notes' => ''
+        };
+ at parse_wim_status.pl line 125.
+status code problem.  Please check the spreadsheet for an unknown status code: $VAR1 = {
+          'site_no' => '872',
+          'class_notes' => '',
+          'class_status' => '',
+          'weight_notes' => '',
+          'ts' => '2012-02-01',
+          'weight_status' => ''
+        };
+ at parse_wim_status.pl line 125.
+directory path is /home/james/Downloads/xlsfiles/, looking for \/(ird|pat).*2012.*status.*\.xlsx?$ at parse_wim_status.pl line 57.
+going to process 15 files:$VAR1 = '/home/james/Downloads/xlsfiles/IRD 01-2012 MONTHLY SITE STATUS.xlsx';
+$VAR2 = '/home/james/Downloads/xlsfiles/IRD 02-2012 MONTHLY SITE STATUS.xlsx';
+$VAR3 = '/home/james/Downloads/xlsfiles/IRD 03-2012 MONTHLY SITE STATUS.xlsx';
+$VAR4 = '/home/james/Downloads/xlsfiles/IRD 04-2012 MONTHLY SITE STATUS.xlsx';
+$VAR5 = '/home/james/Downloads/xlsfiles/IRD 05-2012 MONTHLY SITE STATUS.xlsx';
+$VAR6 = '/home/james/Downloads/xlsfiles/IRD 06-2012 MONTHLY SITE STATUS.xlsx';
+$VAR7 = '/home/james/Downloads/xlsfiles/IRD 07-2012 MONTHLY SITE STATUS.xlsx';
+$VAR8 = '/home/james/Downloads/xlsfiles/IRD 08-2012 MONTHLY SITE STATUS.xlsx';
+$VAR9 = '/home/james/Downloads/xlsfiles/IRD 09-2012 MONTHLY SITE STATUS.xlsx';
+$VAR10 = '/home/james/Downloads/xlsfiles/IRD 10-2012 MONTHLY SITE STATUS.xlsx';
+$VAR11 = '/home/james/Downloads/xlsfiles/IRD 11-2012 MONTHLY SITE STATUSBA.xlsx';
+$VAR12 = '/home/james/Downloads/xlsfiles/IRD 12-2012 MONTHLY SITE STATUSBA.xlsx';
+$VAR13 = '/home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls';
+$VAR14 = '/home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls';
+$VAR15 = '/home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls';
+ at parse_wim_status.pl line 70.
+processing /home/james/Downloads/xlsfiles/IRD 01-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/IRD 01-2012 MONTHLY SITE STATUS.xlsx$VAR1 = {
+          'class_notes' => "high class \x{d8}",
+          'class_status' => 'B',
+          'internal_weight_notes' => '',
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank weight status.  ',
+          'internal_class_notes' => "high class \x{d8}",
+          'weight_status' => 'UNDEFINED',
+          'site_no' => '856',
+          'weight_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 02-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/IRD 02-2012 MONTHLY SITE STATUS.xlsx$VAR1 = {
+          'weight_notes' => '',
+          'site_no' => '856',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank weight status.  ',
+          'ts' => '2012-01-01',
+          'internal_class_notes' => "high class \x{d8} = B",
+          'weight_status' => 'UNDEFINED',
+          'class_notes' => "high class \x{d8}",
+          'class_status' => 'B',
+          'internal_weight_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 03-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 04-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 05-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 06-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 07-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 08-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/IRD 08-2012 MONTHLY SITE STATUS.xlsx$VAR1 = {
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to B based on RED (#ff0000) weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'ts' => '2012-08-01',
+          'weight_status' => 'B',
+          'weight_notes' => 'HIGH WGTDIFF #2 lane',
+          'class_notes' => '',
+          'site_no' => '844',
+          'class_status' => 'UNDEFINED'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 09-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 115 rows of data at parse_wim_status.pl line 102.
+got 115 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 230 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 10-2012 MONTHLY SITE STATUS.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 116 rows of data at parse_wim_status.pl line 102.
+got 116 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 232 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 11-2012 MONTHLY SITE STATUSBA.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/IRD 11-2012 MONTHLY SITE STATUSBA.xlsx$VAR1 = {
+          'ts' => '2012-10-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  ',
+          'weight_status' => 'B',
+          'weight_notes' => 'HIGH WGT OVER MULTIPLE LANES',
+          'class_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '86'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/IRD 11-2012 MONTHLY SITE STATUSBA.xlsx$VAR1 = {
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => '',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'ts' => '2012-10-01',
+          'class_notes' => '',
+          'site_no' => '109',
+          'class_status' => 'UNDEFINED'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/IRD 12-2012 MONTHLY SITE STATUSBA.xlsx with year 2012 at parse_wim_status.pl line 84.
+got 117 rows of data at parse_wim_status.pl line 102.
+got 117 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 234 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls with year 2012 at parse_wim_status.pl line 84.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'site_no' => '86',
+          'class_status' => 'UNDEFINED',
+          'weight_status' => 'G',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'ts' => '2012-01-01'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'ts' => '2012-01-01',
+          'weight_status' => 'G',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'class_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '109'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'weight_notes' => '',
+          'weight_status' => 'UNDEFINED',
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '870',
+          'class_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'weight_notes' => '',
+          'weight_status' => 'UNDEFINED',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '872',
+          'class_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data at parse_wim_status.pl line 102.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '870',
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => '',
+          'ts' => '2012-12-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  '
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 01-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'site_no' => '872',
+          'class_status' => 'UNDEFINED',
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => '',
+          'ts' => '2012-12-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  '
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 8 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls with year 2012 at parse_wim_status.pl line 84.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_status' => 'UNDEFINED',
+          'site_no' => '86',
+          'class_notes' => '',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'weight_status' => 'G',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'ts' => '2012-02-01'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'weight_status' => 'G',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'ts' => '2012-02-01',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '109',
+          'class_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '870',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'ts' => '2012-02-01',
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '872',
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => '',
+          'ts' => '2012-02-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  '
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data at parse_wim_status.pl line 102.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '86',
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'weight_status' => 'G',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'site_no' => '109',
+          'class_status' => 'UNDEFINED',
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'weight_status' => 'G',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => '',
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'class_notes' => '',
+          'site_no' => '870',
+          'class_status' => 'UNDEFINED'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 02-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'ts' => '2012-01-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'weight_notes' => '',
+          'weight_status' => 'UNDEFINED',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '872',
+          'class_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 8 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
+processing /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls with year 2012 at parse_wim_status.pl line 84.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'site_no' => '86',
+          'class_status' => 'UNDEFINED',
+          'weight_status' => 'G',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'ts' => '2012-03-01'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'site_no' => '109',
+          'class_status' => 'UNDEFINED',
+          'ts' => '2012-03-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'weight_status' => 'G',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => '',
+          'ts' => '2012-03-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'class_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '870'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'site_no' => '872',
+          'class_status' => 'UNDEFINED',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'ts' => '2012-03-01',
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data at parse_wim_status.pl line 102.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 2 file /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_status' => 'UNDEFINED',
+          'site_no' => '86',
+          'class_notes' => '',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'weight_status' => 'G',
+          'ts' => '2012-02-01',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  '
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+fgcolor of note is undefined but the note exists; assuming good weight status for row 3 file /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_status' => 'UNDEFINED',
+          'site_no' => '109',
+          'class_notes' => '',
+          'weight_notes' => 'NEEDS LIMIT CHANGE/Low Counts Wt Over',
+          'weight_status' => 'G',
+          'parser_decisions_notes' => 'Setting UNDEFINED or ? weight status to G based on black or undefined weight note color.  Forcing UNDEFINED on blank class status.  ',
+          'ts' => '2012-02-01'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'class_notes' => '',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '870',
+          'weight_status' => 'UNDEFINED',
+          'weight_notes' => '',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'ts' => '2012-02-01'
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+Setting at least one status to undefined.  Needs check: /home/james/Downloads/xlsfiles/PAT 03-2012 MONTHLY SITE STATUS.xls$VAR1 = {
+          'ts' => '2012-02-01',
+          'parser_decisions_notes' => 'Forcing UNDEFINED on blank class status.  Forcing UNDEFINED on blank weight status.  ',
+          'weight_notes' => '',
+          'weight_status' => 'UNDEFINED',
+          'class_status' => 'UNDEFINED',
+          'site_no' => '872',
+          'class_notes' => ''
+        };
+ at reader CalVAD::WIM::ParseStatusSpreadsheeets::data (defined at /usr/local/share/perl5/CalVAD/WIM/ParseStatusSpreadsheeets.pm line 56) line 7.
+got 4 rows of data in second pass (look at past month) at parse_wim_status.pl line 112.
+got 8 rows of data in second pass (look at past month) at parse_wim_status.pl line 115.
+duplicate key detected or bad status value, saving in groups of 100 at parse_wim_status.pl line 125.
+drop down to individual rows at parse_wim_status.pl line 125.
